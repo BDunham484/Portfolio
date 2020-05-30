@@ -82,13 +82,12 @@ nav {
         
     }
 
-    .nav-trans {
+    .nav-in {
         transition: transform 0.5s ease-in;
     }
 
-    /* well for the second problem 
-    remove transition from .nav-links and put it into another class
-    and in javascript when you click at the burger menu add that class */
+    
+
 
 
     .nav-links li {
@@ -127,4 +126,12 @@ nav {
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
     
+}
+
+
+
+
+
+body {
+    background-color: #202020;
 }
