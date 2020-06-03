@@ -11,6 +11,7 @@ nav {
     min-height: 8vh;
     background-color: #383737;
     font-family: 'Montserrat', sans-serif;
+    
 
 }
 
@@ -30,6 +31,10 @@ nav {
 
 .nav-links li {
     list-style: none;
+}
+
+.nav-links a:hover {
+    color: rgb(247, 194, 129);
 }
 
 .nav-links a {
@@ -134,4 +139,18 @@ nav {
 
 body {
     background-color: #202020;
+}
+
+
+.golden-triangle {
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#golden-triangle {
+    height: 80vh;
+    
 }
