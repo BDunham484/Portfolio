@@ -33,7 +33,7 @@ function parallax(element, distance, speed) {
 
 window.addEventListener("scroll", function(){
     parallax("header", window.scrollY, 1);
-    parallax('#triangle2', window.scrollY, 0.2);
+    parallax('#triangle2', window.scrollY, 0.15);
     parallax('#triangle3', window.scrollY, 0.054);
 });
 
