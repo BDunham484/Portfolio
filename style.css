@@ -194,7 +194,7 @@ body {
 
  header {
     min-height: 100vh;
-    /* background: linear-gradient(240deg, #202020, #834d4d); */
+    background: linear-gradient(240deg, #202020, #291717);
     position: relative;
     z-index: -1;
 
