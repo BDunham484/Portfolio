@@ -210,7 +210,13 @@ nav {
 
   header {
     min-height: 100vh;
-    background: linear-gradient(240deg, #202020, #241414);
+    /* background: linear-gradient(240deg, #202020, #241414); */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+    background: #241414; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     position: relative;
     top: 0;
     left: 0;
@@ -269,9 +275,6 @@ nav {
     background: linear-gradient(240deg, #373838, #202020);
     padding-top: 8vh;
 }
-
-
-
 
 #projects {
     min-height: 50vh;
@@ -455,7 +458,7 @@ nav {
             height: 58vh;
             position: relative;
             top: 0;
-            left: 0.5%;  
+            left: 0;  
         }
         
         #triangle2 {
@@ -483,7 +486,7 @@ nav {
             height: 58vh;
             position: relative;
             top: 0;
-            left: 0.5%;  
+            left: 0;  
         }
         
         #triangle2 {
@@ -623,11 +626,14 @@ and (orientation: portrait) {
     and (max-device-width: 568px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: portrait) {
+        #title {
+            font-size: 8px;
+        }
         #triangle1 {
             height: 58vh;
             position: relative;
             top: 0;
-            left: 0.5%;  
+            left: 0;  
         }
         
         #triangle2 {
@@ -690,15 +696,18 @@ and (orientation: portrait) {
             height: 42vh;
             position: absolute;
             top: 35%;
-            left: 0%;    
+            left: 0;
+            right: 0;
+            margin: auto;   
         }
         
         #triangle3 {
             height: 42vh;
             position: absolute;
             top: 42%;
-            left: auto;
+            left: 0;
             right: 0;
+            margin: auto;
         }
     }
 
@@ -713,7 +722,7 @@ and (orientation: portrait) {
             height: 58vh;
             position: relative;
             top: 0;
-            left: 0.5%;  
+            left: 0;  
         }
         
         #triangle2 {
@@ -741,7 +750,7 @@ and (orientation: portrait) {
             height: 50vh;
             position: relative;
             top: 0;
-            left: 0.5%;  
+            left: 0;  
         }
         
         #triangle2 {
@@ -770,7 +779,7 @@ and (orientation: portrait) {
             height: 58vh;
             position: relative;
             top: 0;
-            left: 0.5%;  
+            left: 0;  
         }
         
         #triangle2 {
@@ -788,36 +797,43 @@ and (orientation: portrait) {
         }
     }
 
-
+/* iPHONE X - PORTRAIT */
     @media only screen 
     and (min-device-width: 375px)
     and (max-device-width: 812px)
     and (-webkit-min-device-pixel-ratio: 3)
     and (orientation: portrait) {
         #triangle1 {
-            height: 50vh;
+            height: 48vh;
             position: relative;
             top: 0;
-            left: 0.5%;  
+            left: 0;  
         }
         
         #triangle2 {
-            height: 42vh;
+            height: 40vh;
             position: absolute;
             top: 35%;
-            left: 0;    
+            left: 0;
+            right: 0;
+            margin: auto;
+            
+            
         }
         
         #triangle3 {
-            height: 42vh;
+            height: 40vh;
             position: absolute;
             top: 42%;
-            left: auto;
+            left: 0;
             right: 0;
+            margin: auto;
+            
+            
         }
     }
 
-
+/* iPHONE X - LANDSCAPE */
     @media only screen 
     and (min-device-width: 375px)
     and (max-device-width: 812px)
@@ -827,7 +843,7 @@ and (orientation: portrait) {
             height: 58vh;
             position: relative;
             top: 0;
-            left: 0.5%;  
+            left: 0;  
         }
         
         #triangle2 {
@@ -844,4 +860,78 @@ and (orientation: portrait) {
             left: 43%;
         }
     }
+
+    /* iPAD  */
+    @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #triangle1 {
+        height: 58vh;
+        position: relative;
+        top: 0;
+        left: 0;  
+    }
+    
+    #triangle2 {
+        height: 50vh;
+        position: absolute;
+        top: 35%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        
+        
+    }
+    
+    #triangle3 {
+        height: 50vh;
+        position: absolute;
+        top: 42%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        
+        
+    }
+}
+
+
+    /* iPAD PRO 12.9" */
+    @media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #triangle1 {
+        height: 58vh;
+        position: relative;
+        top: 0;
+        left: 0;  
+    }
+    
+    #triangle2 {
+        height: 50vh;
+        position: absolute;
+        top: 35%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        
+        
+    }
+    
+    #triangle3 {
+        height: 50vh;
+        position: absolute;
+        top: 42%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        
+        
+    }
+}
+
   
