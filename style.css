@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+*::selection {
+    background-color: transparent;
+}
+
 
 
 nav {
@@ -24,7 +28,10 @@ nav {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 22px;
+}
 
+#title {
+    font-size: 10px;
 }
 
 .nav-links {
@@ -250,6 +257,55 @@ nav {
     left: 42%;
 }
 
+
+#about {
+    min-height: 100vh;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(240deg, #373838, #202020);
+    padding-top: 8vh;
+}
+
+
+
+
+#projects {
+    min-height: 50vh;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(240deg, #202020, #373838);
+    padding-top: 8vh;
+}
+#contact {
+    min-height: 50vh;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(240deg, #373838, #202020);
+    padding-top: 8vh;
+}
+
+
+
+
+
+
+
+
+
+
+/* **********MEDIA QUERIES********** */
 @media screen and (max-width: 1450px) {
     #triangle1 {
         height: 58vh;
@@ -388,29 +444,313 @@ nav {
     }
 }
 
-#about {
-    min-height: 100vh;
-    color: antiquewhite;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    font-size: 50px;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #373838;
-    padding-top: 8vh;
-}
 
+/* MOTO G4 - PORTRAIT */
+@media only screen 
+    and (min-device-width: 360px)
+    and (max-device-width: 640px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+        #triangle1 {
+            height: 58vh;
+            position: relative;
+            top: 0;
+            left: 0.5%;  
+        }
+        
+        #triangle2 {
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 5%;    
+        }
+        
+        #triangle3 {
+            height: 50vh;
+            position: absolute;
+            top: 42%;
+            left: 5%;
+        }
+    }
 
+/* MOTO G4 - LANDSCAPE */
+@media only screen 
+    and (min-device-width: 360px)
+    and (max-device-width: 640px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+        #triangle1 {
+            height: 58vh;
+            position: relative;
+            top: 0;
+            left: 0.5%;  
+        }
+        
+        #triangle2 {
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 27%;    
+        }
+        
+        #triangle3 {
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 45%;
+        }
+    }
 
+/* PIXEL 2 - LANDSCAPE */
+@media only screen 
+    and (min-device-width: 411px)
+    and (max-device-width: 731px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+    #triangle1 {
+        height: 58vh;
+        position: relative;
+        top: 0;
+        left: 0;  
+    }
+    
+    #triangle2 {
+        height: 50vh;
+        position: absolute;
+        top: 35%;
+        left: 27%;    
+    }
+    
+    #triangle3 {
+        height: 50vh;
+        position: absolute;
+        top: 35%;
+        left: 45%;
+    }
+  }
 
-#projects {
-    min-height: 100vh;
-    color: antiquewhite;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    font-size: 50px;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #202020;
-    padding-top: 8vh;
-}
+/* PIXEL 2 XL - PORTRAIT */
+@media only screen 
+    and (min-device-width: 411px)
+    and (max-device-width: 823px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+    #triangle1 {
+        height: 50vh;
+        position: relative;
+        top: 0;
+        left: 0;  
+    }
+    
+    #triangle2 {
+        height: 42vh;
+        position: absolute;
+        top: 35%;
+        left: 7%;    
+    }
+    
+    #triangle3 {
+        height: 42vh;
+        position: absolute;
+        top: 42%;
+        left: 7%;
+    }
+  }
+
+/* PIXEL 2 XL - LANDSCAPE */
+  @media only screen 
+    and (min-device-width: 411px)
+    and (max-device-width: 823px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+    #triangle1 {
+        height: 58vh;
+        position: relative;
+        top: 0;
+        left: 0;  
+    }
+    
+    #triangle2 {
+        height: 50vh;
+        position: absolute;
+        top: 35%;
+        left: 29%;    
+    }
+    
+    #triangle3 {
+        height: 50vh;
+        position: absolute;
+        top: 35%;
+        left: 45.5%;
+    }
+  }
+
+  /* iPHONE 5/SE - PORTRAIT */
+  @media only screen 
+    and (min-device-width: 320px)
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+        #triangle1 {
+            height: 58vh;
+            position: relative;
+            top: 0;
+            left: 0.5%;  
+        }
+        
+        #triangle2 {
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 5%;    
+        }
+        
+        #triangle3 {
+            height: 50vh;
+            position: absolute;
+            top: 42%;
+            left: 5%;
+        }
+    }
+
+/* iPHONE 5/SE - LANDSCAPE */
+    @media only screen 
+    and (min-device-width: 320px)
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+        #triangle1 {
+            height: 58vh;
+            position: relative;
+            top: 0;
+            left: 0.5%;  
+        }
+        
+        #triangle2 {
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 27%;    
+        }
+        
+        #triangle3 {
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 45%;
+        }
+    }
+
+/* iPHONE 6/7/8 - LANDSCAPE */
+    @media only screen 
+    and (min-device-width: 375px)
+    and (max-device-width: 667px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+        #triangle1 {
+            height: 58vh;
+            position: relative;
+            top: 0;
+            left: 0.5%;  
+        }
+        
+        #triangle2 {
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 27%;    
+        }
+        
+        #triangle3 {
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 45%;
+        }
+    }
+
+/* iPHONE 6/7/8 PLUS - LANDSCAPE */
+    @media only screen 
+    and (min-device-width: 414px)
+    and (max-device-width: 736px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+        #triangle1 {
+            height: 58vh;
+            position: relative;
+            top: 0;
+            left: 0.5%;  
+        }
+        
+        #triangle2 {
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 27%;    
+        }
+        
+        #triangle3 {
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 45%;
+        }
+    }
+
+/* iPHONE X - PORTRAIT */
+    @media only screen 
+    and (min-device-width: 375px)
+    and (max-device-width: 812px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+    #triangle1 {
+        height: 47.5vh;
+        position: relative;
+        top: 0;
+        left: 0.5%;  
+    }
+    
+    #triangle2 {
+        height: 39.5vh;
+        position: absolute;
+        top: 35%;
+        left: 7%;    
+    }
+    
+    #triangle3 {
+        height: 39.5vh;
+        position: absolute;
+        top: 42%;
+        left: 7%;
+    }
+  }
+
+/* iPHONE X - LANDSCAPE */
+  @media only screen 
+    and (min-device-width: 375px)
+    and (max-device-width: 812px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+    #triangle1 {
+        height: 58vh;
+        position: relative;
+        top: 0;
+        left: 0;  
+    }
+    
+    #triangle2 {
+        height: 50vh;
+        position: absolute;
+        top: 35%;
+        left: 31%;    
+    }
+    
+    #triangle3 {
+        height: 50vh;
+        position: absolute;
+        top: 35%;
+        left: 45.5%;
+    }
+  }
+    
+    
