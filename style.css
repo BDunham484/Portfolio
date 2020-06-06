@@ -490,7 +490,7 @@ nav {
             height: 50vh;
             position: absolute;
             top: 35%;
-            left: 27%;    
+            left: 20%;    
         }
         
         #triangle3 {
@@ -500,6 +500,37 @@ nav {
             left: 45%;
         }
     }
+
+
+    /* PIXEL 2 - PORTRAIT */
+@media only screen 
+and (min-device-width: 411px)
+and (max-device-width: 731px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+#triangle1 {
+    height: 58vh;
+    position: relative;
+    top: 0;
+    left: 0;  
+}
+
+#triangle2 {
+    height: 50vh;
+    position: absolute;
+    top: 35%;
+    left: 7%;    
+}
+
+#triangle3 {
+    height: 50vh;
+    position: absolute;
+    top: 42%;
+    left: 7%;
+}
+}
+
+  
 
 /* PIXEL 2 - LANDSCAPE */
 @media only screen 
@@ -533,7 +564,7 @@ nav {
 @media only screen 
     and (min-device-width: 411px)
     and (max-device-width: 823px)
-    and (-webkit-min-device-pixel-ratio: 2)
+    and (-webkit-min-device-pixel-ratio: 3.5)
     and (orientation: portrait) {
     #triangle1 {
         height: 50vh;
@@ -546,14 +577,15 @@ nav {
         height: 42vh;
         position: absolute;
         top: 35%;
-        left: 7%;    
+        left: 0;    
     }
     
     #triangle3 {
         height: 42vh;
         position: absolute;
         top: 42%;
-        left: 7%;
+        left: auto;
+        right: 0;
     }
   }
 
@@ -561,7 +593,7 @@ nav {
   @media only screen 
     and (min-device-width: 411px)
     and (max-device-width: 823px)
-    and (-webkit-min-device-pixel-ratio: 2)
+    and (-webkit-min-device-pixel-ratio: 3.5)
     and (orientation: landscape) {
     #triangle1 {
         height: 58vh;
@@ -614,7 +646,7 @@ nav {
     }
 
 /* iPHONE 5/SE - LANDSCAPE */
-    @media only screen 
+    /* @media only screen 
     and (min-device-width: 320px)
     and (max-device-width: 568px)
     and (-webkit-min-device-pixel-ratio: 2)
@@ -639,7 +671,37 @@ nav {
             top: 35%;
             left: 45%;
         }
+    } */
+
+/* iPHONE 6/7/8 - PORTRAIT */
+    @media only screen 
+    and (min-device-width: 375px)
+    and (max-device-width: 667px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+        #triangle1 {
+            height: 50vh;
+            position: relative;
+            top: 0;
+            left: 0;  
+        }
+        
+        #triangle2 {
+            height: 42vh;
+            position: absolute;
+            top: 35%;
+            left: 0%;    
+        }
+        
+        #triangle3 {
+            height: 42vh;
+            position: absolute;
+            top: 42%;
+            left: auto;
+            right: 0;
+        }
     }
+
 
 /* iPHONE 6/7/8 - LANDSCAPE */
     @media only screen 
@@ -669,11 +731,40 @@ nav {
         }
     }
 
+/* iPHONE 6/7/8 PLUS - PORTRAIT */
+    @media only screen 
+    and (min-device-width: 414px)
+    and (max-device-width: 736px)
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: portrait) {
+        #triangle1 {
+            height: 50vh;
+            position: relative;
+            top: 0;
+            left: 0.5%;  
+        }
+        
+        #triangle2 {
+            height: 42vh;
+            position: absolute;
+            top: 35%;
+            left: 0;    
+        }
+        
+        #triangle3 {
+            height: 42vh;
+            position: absolute;
+            top: 42%;
+            left: auto;
+            right: 0;
+        }
+    }
+
 /* iPHONE 6/7/8 PLUS - LANDSCAPE */
     @media only screen 
     and (min-device-width: 414px)
     and (max-device-width: 736px)
-    and (-webkit-min-device-pixel-ratio: 2)
+    and (-webkit-min-device-pixel-ratio: 3)
     and (orientation: landscape) {
         #triangle1 {
             height: 58vh;
@@ -697,60 +788,60 @@ nav {
         }
     }
 
-/* iPHONE X - PORTRAIT */
+
     @media only screen 
     and (min-device-width: 375px)
     and (max-device-width: 812px)
-    and (-webkit-min-device-pixel-ratio: 2)
+    and (-webkit-min-device-pixel-ratio: 3)
     and (orientation: portrait) {
-    #triangle1 {
-        height: 47.5vh;
-        position: relative;
-        top: 0;
-        left: 0.5%;  
+        #triangle1 {
+            height: 50vh;
+            position: relative;
+            top: 0;
+            left: 0.5%;  
+        }
+        
+        #triangle2 {
+            height: 42vh;
+            position: absolute;
+            top: 35%;
+            left: 0;    
+        }
+        
+        #triangle3 {
+            height: 42vh;
+            position: absolute;
+            top: 42%;
+            left: auto;
+            right: 0;
+        }
     }
-    
-    #triangle2 {
-        height: 39.5vh;
-        position: absolute;
-        top: 35%;
-        left: 7%;    
-    }
-    
-    #triangle3 {
-        height: 39.5vh;
-        position: absolute;
-        top: 42%;
-        left: 7%;
-    }
-  }
 
-/* iPHONE X - LANDSCAPE */
-  @media only screen 
+
+    @media only screen 
     and (min-device-width: 375px)
     and (max-device-width: 812px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: landscape) {
-    #triangle1 {
-        height: 58vh;
-        position: relative;
-        top: 0;
-        left: 0;  
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: landscape)  {
+        #triangle1 {
+            height: 58vh;
+            position: relative;
+            top: 0;
+            left: 0.5%;  
+        }
+        
+        #triangle2 {
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 33%;    
+        }
+        
+        #triangle3 {
+            height: 50vh;
+            position: absolute;
+            top: 42%;
+            left: 43%;
+        }
     }
-    
-    #triangle2 {
-        height: 50vh;
-        position: absolute;
-        top: 35%;
-        left: 31%;    
-    }
-    
-    #triangle3 {
-        height: 50vh;
-        position: absolute;
-        top: 35%;
-        left: 45.5%;
-    }
-  }
-    
-    
+  
