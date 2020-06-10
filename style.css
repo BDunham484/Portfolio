@@ -267,14 +267,122 @@ nav {
 #about {
     min-height: 100vh;
     color: antiquewhite;
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     /* align-items: center; */
-    font-size: 50px;
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(240deg, #373838, #202020);
     padding-top: 8vh;
 }
+
+.small-gold-triangle {
+    height: 100px;
+}
+
+.small-white-triangle {
+    height: 100px;
+}
+
+#about-top {
+    list-style: none;
+    min-height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+#about-bottom {
+    /* min-height: 72vh; */
+    min-height: 92vh;
+    width: 100%;
+    display: flex;
+    
+}
+
+#about-text {
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* background-color: rgb(65, 62, 62); */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#383737+0,202020+100 */
+background: #383737; /* Old browsers */
+background: -moz-linear-gradient(45deg, #383737 0%, #202020 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #383737 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #383737 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383737', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
+}
+
+#selfie {
+    height: 200px;
+    border: 2px solid antiquewhite;
+}
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    height: 72vh;
+    font-size: 24px;
+    
+}
+
+#about-me li {
+    list-style: none;
+}
+
+.contact-me-triangle {
+    height: 100px;
+    width: 100px;
+    /* background-color: antiquewhite; */
+    background-image: url(images\goldentriangle.png);
+}
+
+.contact-me-triangle:hover {
+    background-color: black;
+    background-image: url(images\goldentrianglefill.png);
+}
+
+
+
+#about-list {
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(43, 48, 54); */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#202020+0,2b3036+100 */
+background: #202020; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #202020 0%, #2b3036 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #202020 0%,#2b3036 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #202020 0%,#2b3036 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#202020', endColorstr='#2b3036',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+   }
+
+#list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 72vh;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+
+}
+
+
+
 
 #projects {
     min-height: 50vh;
