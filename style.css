@@ -296,7 +296,7 @@ nav {
 
 #about-bottom {
     /* min-height: 72vh; */
-    min-height: 92vh;
+    min-height: 72vh;
     width: 100%;
     display: flex;
     
@@ -345,12 +345,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383737', end
     height: 100px;
     width: 100px;
     /* background-color: antiquewhite; */
-    background-image: url(images\goldentriangle.png);
+    background-image: url(./images/goldentriangle.png);
+    background-size: cover;
+    
+    
+    
 }
 
 .contact-me-triangle:hover {
-    background-color: black;
-    background-image: url(images\goldentrianglefill.png);
+    height: 100px;
+    width: 100px;
+    /* background-color: black; */
+    background-image: url(./images/goldentrianglefill.png);
+    background-size: cover;
 }
 
 
