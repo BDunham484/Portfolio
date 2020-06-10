@@ -271,7 +271,8 @@ nav {
     /* justify-content: center; */
     /* align-items: center; */
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(240deg, #373838, #202020);
+    /* background: linear-gradient(240deg, #373838, #202020); */
+    background: transparent;
     padding-top: 8vh;
 }
 
@@ -322,8 +323,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383737', end
 }
 
 #selfie {
-    height: 200px;
-    border: 2px solid antiquewhite;
+    height: 300px;
+    /* border: 2px solid antiquewhite; */
 }
 
 #about-me {
@@ -332,13 +333,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383737', end
     align-items: center;
     text-align: center;
     justify-content: space-around;
-    height: 72vh;
+    height: 92vh;
     font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 50px;
     
 }
 
 #about-me li {
     list-style: none;
+}
+
+#about-background {
+    background-color: #302f2f;
+    padding: 30px;
 }
 
 .contact-me-triangle {
@@ -375,19 +383,40 @@ background: -moz-linear-gradient(-45deg, #202020 0%, #2b3036 100%); /* FF3.6-15 
 background: -webkit-linear-gradient(-45deg, #202020 0%,#2b3036 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(135deg, #202020 0%,#2b3036 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#202020', endColorstr='#2b3036',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
    }
 
 #list {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 72vh;
+    height: 92vh;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 22px;
+    font-size: 28px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
 
 }
 
+.glow {
+    color: antiquewhite;
+    text-shadow: 0px 0px 10px #e12b2b;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;  
+}
+
+.glow:hover {
+    color: antiquewhite;
+  text-shadow:0px 0px 30px rgb(253,243,181);
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
 
 
 
