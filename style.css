@@ -341,7 +341,7 @@ nav {
     height: 100vh;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 28px;
+    font-size: max(2vw, 28px);
     padding-top: 50px;
     padding-bottom: 50px;
     list-style: none;
@@ -404,11 +404,15 @@ nav {
     padding-top: 8vh;
 }
 
-/* #projects-title {
+#projects-title {
+    list-style: none;
     display: flex;
-    justify-content: center;
-    font-size: 40px;
-} */
+    flex-direction: column;
+    font-size: max(2vw, 28px);
+    align-items: center;
+    padding-right: 10px;
+    text-shadow: 0px 0px 10px #e12b2b;
+}
 
 #screenshots {
     display: flex;
@@ -435,6 +439,15 @@ nav {
     align-items: center;
 }
 
+.borders-left {    
+    border-top: solid 2px antiquewhite;
+    border-bottom: solid 2px antiquewhite;
+    border-left: solid 2px antiquewhite;
+    padding-left: 2vw;
+    padding-top: 200%;
+    padding-bottom: 200%;
+}
+
 .borders3 {    
     border-top: solid 2px antiquewhite;
     border-bottom: solid 2px antiquewhite;
@@ -456,6 +469,7 @@ nav {
     padding-top: 50%;
     padding-bottom: 50%;
 }
+
 .borders6 {    
     border-top: solid 2px antiquewhite;
     border-bottom: solid 2px antiquewhite;
@@ -497,6 +511,15 @@ nav {
     padding-left: 2vw;
     padding-top: 50%;
     padding-bottom: 50%;
+}
+
+.borders-right {    
+    border-top: solid 2px antiquewhite;
+    border-bottom: solid 2px antiquewhite;
+    border-right: solid 2px antiquewhite;
+    padding-right: 2vw;
+    padding-top: 400%;
+    padding-bottom: 400%;
 }
 
 #vibrato-screenshot {
