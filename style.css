@@ -292,6 +292,10 @@ nav {
     font-size: 24px;
 }
 
+#about-me-header {
+    text-shadow: 0px 0px 10px #e12b2b;
+}
+
 #about-me li {
     list-style: none;
 }
@@ -392,8 +396,6 @@ nav {
 #projects {
     min-height: 50vh;
     color: antiquewhite;
-    /* display: flex;
-    justify-content: center; */
     font-family: 'Montserrat', sans-serif;
      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
      background: #241414; /* Old browsers */
@@ -404,15 +406,7 @@ nav {
     padding-top: 8vh;
 }
 
-#projects-title {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    font-size: max(2vw, 28px);
-    align-items: center;
-    padding-right: 10px;
-    text-shadow: 0px 0px 10px #e12b2b;
-}
+
 
 #screenshots {
     display: flex;
@@ -423,13 +417,31 @@ nav {
     width: 100%;
 }
 
+#projects-title-max {
+    list-style: none;
+    font-size: max(2vw, 28px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10px;
+    text-shadow: 0px 0px 10px #e12b2b;
+}
+
+#projects-title-min {
+    list-style: none;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    text-shadow: 0px 0px 10px #e12b2b;
+}
+
 #border-space {
     list-style: none;
     display: flex;
     flex-direction: column;
-    /* min-height: 42vh;
-    justify-content: space-around; */
-    
 }
 
 .border-alignment {
@@ -469,44 +481,14 @@ nav {
     padding-top: 50%;
     padding-bottom: 50%;
 }
-
 .borders6 {    
-    border-top: solid 2px antiquewhite;
-    border-bottom: solid 2px antiquewhite;
     border-right: solid 2px antiquewhite;
     padding-left: 2vw;
     padding-top: 50%;
     padding-bottom: 50%;
 }
-.borders7 {    
-    border-top: solid 1px antiquewhite;
-    border-bottom: solid 1px antiquewhite;
-    padding-left: 2vw;
-}
-.borders8 {    
-    border-top: solid 2px antiquewhite;
-    border-bottom: solid 2px antiquewhite;
-    border-left: solid 2px antiquewhite;
-    padding-left: 2vw;
-    padding-top: 50%;
-    padding-bottom: 50%;
-}
-.borders9 {    
-    border-top: solid 2px antiquewhite;
-    border-bottom: solid 2px antiquewhite;
-    border-right: solid 2px antiquewhite;
-    padding-left: 2vw;
-    padding-top: 50%;
-    padding-bottom: 50%;
-}
-.borders10 {    
-    border-top: solid 1px antiquewhite;
-    border-bottom: solid 1px antiquewhite;
-    padding-left: 2vw;
-}
-.borders11 {    
-    border-top: solid 2px antiquewhite;
-    border-bottom: solid 2px antiquewhite;
+
+.borders7 {   
     border-left: solid 2px antiquewhite;
     padding-left: 2vw;
     padding-top: 50%;
@@ -533,11 +515,6 @@ nav {
     max-width: 40vw;
     border: 4px solid antiquewhite;
 }
-
-
-
-
-
 
 
 
@@ -569,6 +546,8 @@ nav {
 
 
 /* **********MEDIA QUERIES********** */
+
+/* **********HEADER********** */
 @media screen and (max-width: 1450px) {
     #triangle1 {
         height: 58vh;
@@ -707,6 +686,69 @@ nav {
     }
 }
 
+/* **********ABOUT********** */
+@media screen and (max-width: 768px) {
+    #about-list {
+        
+        width: 100vw;
+    }
+
+    #about-text {
+        width: 100vw;
+    }
+
+    #about {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* **********PROJECTS********** */
+@media screen and (max-width: 1100px) {
+    #screenshots {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+        min-height: 42vh;
+        width: 100%;
+    }
+
+    #projects-title-max {
+        display: none;
+    }
+
+    .border-alignment {
+        display: none;
+    }
+
+    #border-space {
+        display: none;
+    }
+
+    #vibrato-screenshot {
+        height: auto;
+        min-width: 65vw;
+        border: 4px solid antiquewhite;
+    }
+    
+    #batcity-screenshot {
+        height: auto;
+        min-width: 65vw;
+        border: 4px solid antiquewhite;
+    }
+
+
+}
+
+@media screen and (min-width: 1100px) {
+    #projects-title-min {
+        display: none;
+    }
+}
+
+
+/* **********DEVICES********** */
 
 /* MOTO G4 - PORTRAIT */
 @media only screen 
@@ -1194,17 +1236,3 @@ and (orientation: portrait) {
     }
 }
 
-@media screen and (max-width: 768px) {
-    #about-list {
-        
-        width: 100vw;
-    }
-
-    #about-text {
-        width: 100vw;
-    }
-
-    #about {
-        flex-wrap: wrap;
-    }
-}
