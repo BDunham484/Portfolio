@@ -264,6 +264,7 @@ nav {
     font-family: 'Montserrat', sans-serif;
     padding-top: 4vh;
     
+    
 }
 
 #about-text {
@@ -534,6 +535,7 @@ nav {
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(240deg, #373838, #202020);
     padding-top: 8vh;
+    
 }
 
 
@@ -705,6 +707,7 @@ nav {
 
 /* **********PROJECTS********** */
 @media screen and (max-width: 1100px) {
+   
     #screenshots {
         display: flex;
         flex-direction: column;
@@ -726,37 +729,90 @@ nav {
         display: none;
     }
 
+    .min-border-space {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+
     .min-border-alignment {
         list-style: none;
         display: flex;
+        align-items: center;
         flex-direction: column;
-        
-        
-    }
+        }
 
-    .min-border1 {
-        border-right: solid 1px antiquewhite;
-        border-left: solid 1px antiquewhite;
-        padding-top: 2vh;
-    }
+    
 
-    .min-border2 {
+    .min-borders-top {
         border-top: solid 2px antiquewhite;
         border-left: solid 2px antiquewhite;
         border-right: solid 2px antiquewhite;
         padding-top: 2vh;
-        padding-right: 200%;
-        padding-left: 200%;
+        padding-right: 25vw;
+        padding-left: 25vw;
         
     }
 
+    .min-borders3 {
+        border-bottom: solid 2px antiquewhite;
+        border-left: solid 2px antiquewhite;
+        border-right: solid 2px antiquewhite;
+        padding-bottom: 2vh;
+        padding-left: 8.5vw;
+        padding-right: 8.5vw;
+    }
+
+    .min-borders4 {    
+        border-left: solid 1px antiquewhite;
+        border-right: solid 1px antiquewhite;
+        padding-bottom: 2vh;
+    }
+
+    .min-borders5 {    
+        border-top: solid 2px antiquewhite;
+        border-left: solid 2px antiquewhite;
+        border-right: solid 2px antiquewhite;
+        padding-top: 2vh;
+        padding-left: 8.5vw;
+        padding-right: 8.5vw;
+    }
+
+    .min-borders6 {
+        border-bottom: solid 2px antiquewhite;
+        padding-bottom: 2vh;
+        padding-left: 8.5vw;
+        padding-right: 8.5vw;
+    }
+
+    .min-borders7 {    
+        border-top: solid 2px antiquewhite;
+        padding-top: 2vh;
+        padding-left: 8.5vw;
+        padding-right: 8.5vw;
+    }
+
+    .min-borders-bottom {
+        border-bottom: solid 2px antiquewhite;
+        border-left: solid 2px antiquewhite;
+        border-right: solid 2px antiquewhite;
+        padding-top: 2vh;
+        padding-right: 25vw;
+        padding-left: 25vw;
+    }
+
+    
+
     #vibrato-screenshot {
+        display: block;
         height: auto;
         max-width: 65vw;
         border: 4px solid antiquewhite;
     }
     
     #batcity-screenshot {
+        display: block;
         height: auto;
         max-width: 65vw;
         border: 4px solid antiquewhite;
@@ -767,6 +823,10 @@ nav {
 
 @media screen and (min-width: 1100px) {
     #projects-title-min {
+        display: none;
+    }
+
+    .min-border-space {
         display: none;
     }
 
