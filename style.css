@@ -262,12 +262,14 @@ nav {
     display: flex;
     color: antiquewhite;
     font-family: 'Montserrat', sans-serif;
-    padding-top: 4vh;
+    /* padding-top: 1vh; */
+    
     
     
 }
 
 #about-text {
+    padding-top: 4vh;
     min-height: 92vh;
     width: 50vw;
     display: flex;
@@ -324,6 +326,7 @@ nav {
 }
 
 #about-list {
+    padding-top: 4vh;
     min-height: 92vh;
     width: 50vw;
     display: flex;
@@ -405,6 +408,7 @@ nav {
      background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     padding-top: 8vh;
+    
 }
 
 
@@ -536,10 +540,18 @@ nav {
     background: linear-gradient(240deg, #373838, #202020);
     padding-top: 8vh;
     
+    
 }
 
 
-
+/* #bottom {
+    position: -webkit-sticky;
+    bottom: 0;
+    background-color: gray;
+    height: 50vh;
+    z-index: -.5;
+    
+} */
 
 
 
