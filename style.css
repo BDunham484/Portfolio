@@ -327,6 +327,7 @@ nav {
 
 #about-list {
     padding-top: 4vh;
+    
     min-height: 92vh;
     width: 50vw;
     display: flex;
@@ -541,17 +542,60 @@ nav {
     padding-top: 8vh;
     
     
+    
+}
+
+#contact-container {
+    background-color: #202020;
+    width: 60vw;
+    height: auto;
+    border: 2px solid antiquewhite;
+    text-align: center;
+    
+}
+
+form {
+    margin-top: 3vh;
+    transition: all 4s ease-in-out;
+}
+
+.form-control {
+    width: 40vw;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid antiquewhite;
+    color: antiquewhite;
+    font-size: 18px;
+    margin-bottom: 16px;
+
+}
+
+input {
+    height: 45px;
+}
+
+form .submit {
+    background: antiquewhite;
+    border-color: transparent;
+    color: #202020;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+form .submit:hover {
+    background-color: grey;
+    cursor: pointer;
+    
+
 }
 
 
-/* #bottom {
-    position: -webkit-sticky;
-    bottom: 0;
-    background-color: gray;
-    height: 50vh;
-    z-index: -.5;
-    
-} */
+
+
 
 
 
