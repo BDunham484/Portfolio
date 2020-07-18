@@ -538,7 +538,12 @@ nav {
     /* align-items: center; */
     font-size: 50px;
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(240deg, #373838, #202020);
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+    background: #241414; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     padding-top: 8vh;
     
     
@@ -566,31 +571,43 @@ form {
     outline: none;
     border-bottom: 1px solid antiquewhite;
     color: antiquewhite;
-    font-size: 18px;
-    margin-bottom: 16px;
+    font-size: 16px;
+    
 
 }
 
 input {
-    height: 45px;
+    height: 2rem;
+    
 }
 
+input:valid {
+    color: antiquewhite;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: antiquewhite;
+}
+
+
+
 form .submit {
-    background: antiquewhite;
+    background: #373838;
     border-color: transparent;
-    color: #202020;
+    color: antiquewhite;
     font-size: 20px;
-    font-weight: bold;
     letter-spacing: 2px;
     height: 50px;
     margin-top: 20px;
 }
 
 form .submit:hover {
-    background-color: grey;
+    text-shadow: 0px 0px 10px #e12b2b;
     cursor: pointer;
-    
-
 }
 
 
