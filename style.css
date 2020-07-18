@@ -545,9 +545,51 @@ nav {
     background: linear-gradient(135deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     padding-top: 8vh;
-    
-    
-    
+}
+
+#contact-lists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    min-height: 42vh;
+    width: 100%;
+}
+
+#contact-title-max {
+    list-style: none;
+    font-size: max(2vw, 28px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10px;
+    text-shadow: 0px 0px 10px #e12b2b;
+}
+
+.contact-borders4 {    
+    border-top: solid 1px antiquewhite;
+    border-bottom: solid 1px antiquewhite;
+    padding-left: 2vw;
+}
+
+.contact-borders-left {    
+    border-top: solid 2px antiquewhite;
+    border-bottom: solid 2px antiquewhite;
+    border-left: solid 2px antiquewhite;
+    padding-left: 2vw;
+    padding-top: 180%;
+    padding-bottom: 180%;
+}
+
+#contact-title-min {
+    list-style: none;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    text-shadow: 0px 0px 10px #e12b2b;
 }
 
 #contact-container {
@@ -556,6 +598,7 @@ nav {
     height: auto;
     border: 2px solid antiquewhite;
     text-align: center;
+    padding-bottom: 5vh;
     
 }
 
@@ -896,6 +939,42 @@ form .submit:hover {
 
 @media screen and (min-width: 1100px) {
     #projects-title-min {
+        display: none;
+    }
+
+    .min-border-space {
+        display: none;
+    }
+
+    .min-border-alignment {
+        display: none;
+    }
+}
+
+
+
+
+/* **********CONTACT********** */
+
+
+@media screen and (max-width: 1100px) {
+    #contact-title-max {
+        display: none;
+    }
+
+    #contact-lists {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        min-height: 42vh;
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 1100px) {
+    #contact-title-min {
         display: none;
     }
 
