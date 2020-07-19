@@ -1,11 +1,11 @@
 <?php
-    $name = $_Post['name'];
-    $visitor_email = $_Post['email'];
-    $message = $_Post['message'];
+    $name = $_Post["name"];
+    $visitor_email = $_Post["email"];
+    $message = $_Post["message"];
 
     $email_from = "bdunham484@gmail.com";
 
-    $email_subject = "New Form Submission";
+    $email_subject = "Web Dev Inquiry";
 
     $email_body = "User Name: $name.\n".
                     "User Email: $visitor_email.\n".
@@ -20,7 +20,7 @@
 
      mail($to,$email_subject,$email_body,$headers);
 
-     header("Location: index.html");
+     header("Location: home.html");
 
 
 

@@ -598,7 +598,7 @@ nav {
     height: auto;
     border: 2px solid antiquewhite;
     text-align: center;
-    padding-bottom: 5vh;
+    padding-bottom: 7vh;
     
 }
 
@@ -615,8 +615,6 @@ form {
     border-bottom: 1px solid antiquewhite;
     color: antiquewhite;
     font-size: 16px;
-    
-
 }
 
 input {
