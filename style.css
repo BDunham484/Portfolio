@@ -1038,14 +1038,14 @@ form .submit:hover {
             height: 50vh;
             position: absolute;
             top: 35%;
-            left: 20%;    
+            left: 33%;    
         }
         
         #triangle3 {
             height: 50vh;
             position: absolute;
-            top: 35%;
-            left: 45%;
+            top: 42%;
+            left: 43%;
         }
 
         #contact {
@@ -1096,26 +1096,26 @@ and (orientation: portrait) {
     and (max-device-width: 731px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: landscape) {
-    #triangle1 {
-        height: 58vh;
-        position: relative;
-        top: 0;
-        left: 0;  
-    }
-    
-    #triangle2 {
-        height: 50vh;
-        position: absolute;
-        top: 35%;
-        left: 27%;    
-    }
-    
-    #triangle3 {
-        height: 50vh;
-        position: absolute;
-        top: 35%;
-        left: 45%;
-    }
+        #triangle1 {
+            height: 58vh;
+            position: relative;
+            top: 0;
+            left: 0;  
+        }
+        
+        #triangle2 {
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 33%;    
+        }
+        
+        #triangle3 {
+            height: 50vh;
+            position: absolute;
+            top: 42%;
+            left: 43%;
+        }
 
     #contact {
         padding-bottom: 7vh;
@@ -1161,26 +1161,26 @@ and (orientation: portrait) {
     and (max-device-width: 823px)
     and (-webkit-min-device-pixel-ratio: 3.5)
     and (orientation: landscape) {
-    #triangle1 {
-        height: 58vh;
-        position: relative;
-        top: 0;
-        left: 0;  
-    }
-    
-    #triangle2 {
-        height: 50vh;
-        position: absolute;
-        top: 35%;
-        left: 29%;    
-    }
-    
-    #triangle3 {
-        height: 50vh;
-        position: absolute;
-        top: 35%;
-        left: 45.5%;
-    }
+        #triangle1 {
+            height: 58vh;
+            position: relative;
+            top: 0;
+            left: 0;  
+        }
+        
+        #triangle2 {
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 33%;    
+        }
+        
+        #triangle3 {
+            height: 50vh;
+            position: absolute;
+            top: 42%;
+            left: 43%;
+        }
 
     #contact {
         padding-bottom: 7vh;
@@ -1300,14 +1300,14 @@ and (orientation: portrait) {
             height: 50vh;
             position: absolute;
             top: 35%;
-            left: 27%;    
+            left: 33%;    
         }
         
         #triangle3 {
             height: 50vh;
             position: absolute;
-            top: 35%;
-            left: 45%;
+            top: 42%;
+            left: 43%;
         }
     }
 
@@ -1361,14 +1361,14 @@ and (orientation: portrait) {
             height: 50vh;
             position: absolute;
             top: 35%;
-            left: 27%;    
+            left: 33%;    
         }
         
         #triangle3 {
             height: 50vh;
             position: absolute;
-            top: 35%;
-            left: 45%;
+            top: 42%;
+            left: 43%;
         }
 
         #contact {
