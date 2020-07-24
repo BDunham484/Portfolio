@@ -1,30 +1,26 @@
 <?php
+    $name = $_POST["name"];
+    $visitor_email = $_POST["email"];
+    $message = $_POST["message"];
 
-    $result="";
-    if(isset($_POST["submit"])){
-        require "phpmailer/PHPMailerAutoload.php";
-        $mail = new PHPMailer;
+    $email_from = "bdunham484@gmail.com";
 
-        $mail->Host="a2plcpnl0717.prod.iad2.secureserver.net";
-        $mail->Port=465;
-        $mail->SMTPAuth=true;
-        $mail->SMTPSecure="tls";
-        $mail->Username="_mainaccount@brad-dunham.com";
-        $mail->Password="iambraddunham666";
+    $email_subject = "Web Dev Inquiry";
 
-        $mail->setFrom($_POST["email"],$_POST["name"]);
-        $mail->addAddress("bdunham484@gmail.com");
-        $mail->addReplyTo($_POST["email"],$_POST["name"]);
+    $email_body = "User Name: $name.\n".
+                    "User Email: $visitor_email.\n".
+                        "User Message: $message.\n";
+    
 
-        $mail->isHTML(true);
-        $mail->Subject="Form Submission: ".$_POST["subject"];
-        $mail->Body="<h1 align=center>Name :".$_POST["name"]."<br>Email: ".$_POST["email"]."<br>Message: ".$_POST["message"]."</h1>";
+     $to = "bdunham484@gmail.com";
+     
+     $headers = "From: $email_from \r\n";
 
-        if(!$mail->send()){
-            $result="Something went wrong. Please try again.";
-        }
-        else{
-            $result="Thanks ".$_POST["name"]." for contacting us. We'll get back to you soon!";
-        }
-    }
+     $headers .= "Reply-To: $visitor_email \r\n";
+
+     mail($to,$email_subject,$email_body,$headers);
+
+     header("Location: home.html");
+
+
 ?>
