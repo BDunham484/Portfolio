@@ -205,49 +205,34 @@ nav {
 
 }
 
-.sizes {
-	display: flex;
-	list-style: none;
-	
-}
-
-.sizes input {
+.select-size input {
 	display: none;
 }
 
-.sizes li label {
-	padding-left: 8px;
-	padding-right: 8px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 200px;
+.sizes {
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
 	text-align: center;
 	border: 1px solid #901d1d;
-	line-height: 50px;
+	line-height: 40px;
 	cursor: pointer
-  }
-  
-.sizes li {
-	padding-right: 10px;
 }
 
-
-
-#quantity {
-	margin-top: 1vh;
-}
-
-#extrasmall:checked ~ label[for="extrasmall"],
 #small:checked ~ label[for="small"],
 #medium:checked ~ label[for="medium"],
 #large:checked ~ label[for="large"],
-#extralarge:checked ~ label[for="extralarge"],
-#xxl:checked ~ label[for="xxl"], 
-#xxxl:checked ~ label[for="xxxl"], 
-#xxxxl:checked ~ label[for="xxxxl"], 
-#xxxxxl:checked ~ label[for="xxxxxxl"] {
-  background: #999;
-  color: #fff;
+#x-large:checked ~ label[for="x-large"],
+#xx-large:checked ~ label[for="xx-large"] {
+	background: #e2c41d;
+	color: #202020;
+}
+
+#quantity {
+	margin-top: 1vh;
 }
 
 .description {
