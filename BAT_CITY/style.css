@@ -250,7 +250,7 @@ nav {
 					
 					.value-button {
 						display: inline-block;
-						border: 1px solid #ddd;
+						/* border: 1px solid #ddd; */
 						margin: 0px;
 						width: 40px;
 						height: 40px;
@@ -288,8 +288,8 @@ nav {
 					input#number {
 						text-align: center;
 						border: none;
-						border-top: 1px solid #ddd;
-						border-bottom: 1px solid #ddd;
+						/* border-top: 1px solid #ddd;
+						border-bottom: 1px solid #ddd; */
 						margin: 0px;
 						width: 40px;
 						height: 40px;
