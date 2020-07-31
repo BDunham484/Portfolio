@@ -170,9 +170,9 @@ nav {
 
 .itemdescription {
 	padding-left: 11vw;
-	width: 43vw;
+	width: 45vw;
 	position: fixed;
-	margin-left: 50vw;
+	margin-left: 48vw;
 	color: #e2c41d;
 	list-style: none;
 	font-family: acme;
@@ -222,11 +222,13 @@ nav {
 	cursor: pointer
 }
 
+#x-small:checked ~ label[for="x-small"],
 #small:checked ~ label[for="small"],
 #medium:checked ~ label[for="medium"],
 #large:checked ~ label[for="large"],
 #x-large:checked ~ label[for="x-large"],
-#xx-large:checked ~ label[for="xx-large"] {
+#xx-large:checked ~ label[for="xx-large"], 
+#xxx-large:checked ~ label[for="xxx-large"] {
 	background: #e2c41d;
 	color: #202020;
 }
