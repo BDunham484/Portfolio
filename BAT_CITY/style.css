@@ -111,6 +111,10 @@ nav {
 	display: none;
 }
 
+#mobile {
+	display: none;
+}
+
 
 
 /* 12 INCH FIGURES */
@@ -446,23 +450,63 @@ nav {
 		}
 
 		#bela {
-			background-image: url(./Images/basillogo-mobile-portrait.jpg);
-			background-size: contain;
-			background-position: center;
-			/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#901d1d+0,202020+100 */
-				background: #901d1d; /* Old browsers */
-				background: -moz-linear-gradient(top,  #901d1d 0%, #202020 100%); /* FF3.6-15 */
-				background: -webkit-linear-gradient(top,  #901d1d 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
-				background: linear-gradient(to bottom,  #901d1d 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#901d1d', endColorstr='#202020',GradientType=0 ); /* IE6-9 */
+			display: none;
+		}
 
+		#mobile {
+			
+			display: flex;
+			flex-direction: column;
+			min-height: 90vh;
+			/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#901d1d+0,202020+100 */
+			background: #901d1d; /* Old browsers */
+			background: -moz-linear-gradient(top,  #901d1d 0%, #202020 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  #901d1d 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  #901d1d 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#901d1d', endColorstr='#202020',GradientType=0 ); /* IE6-9 */
 		}
 
 		#bela-mobile-image {
 			display: flex;
+			flex-direction: column;
+			justify-content: start;
 			align-items: center;
-			justify-content: center;
-			z-index: +1;
+			height: 38vh;
+			color: #e2c41d;
+			font-family: creepster;
+			font-size: 40px;
+		}
+
+		#bela-mobile-image img {
+			margin-top: 11vh;
+			width: 100vw;
+		}
+
+		.item_description {
+			width: 40vw;
+		}
+
+		#featured_list {
+			display: flex;
+			flex-wrap: wrap;
+			list-style: none;
+			justify-content: space-around;
+		}
+
+		.featured_list_details {
+			list-style: none;
+		}
+
+		.featured_img_size {
+			width: 40vw;
+			height: auto;
+		}
+
+		.featured_item_description {
+			color: #e2c41d;
+			width: 40vw;
+			font-family: acme;
+			
 		}
 	 }
 
@@ -474,6 +518,12 @@ nav {
 		 #title {
 			 margin-bottom: 1vh;
 		 }
+
+		 #mobile {
+			 display: none;
+		 }
+
+
 	  }	 
 
 
