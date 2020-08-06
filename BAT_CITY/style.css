@@ -354,8 +354,8 @@ nav {
     .nav-links {
         position: fixed;
         right: 0px;
-        height: 92vh;
-        top: 8vh;
+        height: 89vh;
+        top: 11vh;
         background-color: #901d1d;
         display: flex;
         flex-direction: column;
@@ -491,7 +491,7 @@ nav {
 			flex-wrap: wrap;
 			list-style: none;
 			justify-content: space-around;
-			
+			margin: 0 !important;
 		}
 
 		.featured_list_details {
@@ -509,6 +509,11 @@ nav {
 			font-family: acme;
 			
 		}
+
+		.nav-links {
+			height: 89vh;
+			top: 11vh;
+		}
 	 }
 
 @media only screen 
@@ -524,6 +529,11 @@ nav {
 			 display: none;
 		 }
 
+		 .nav-links {
+			height: 86vh;
+			top: 14vh;
+		}
+
 
 	  }	 
 
@@ -537,6 +547,7 @@ nav {
 		#title {
 			margin-bottom: 1vh;
 		}
+		
 
 		#bela {
 			display: none;
@@ -596,9 +607,14 @@ nav {
 			color: #e2c41d;
 			width: 40vw;
 			font-family: acme;
-			
 		}
-	}
+
+		/* .nav-links {
+			height: 87vh;
+			top: 13vh;
+		} */
+
+}
 	
 
 	@media only screen 
@@ -613,6 +629,11 @@ nav {
 		#mobile {
 			display: none;
 		}
+
+		/* .nav-links {
+			height: 84vh;
+			top: 16vh;
+		} */
 	}
 
 /* ***********GALAXY S5 PORTRAIT********** */
@@ -701,7 +722,17 @@ nav {
 	}
 }
 
+/* **********GOOGOLE PIXEL********** */
 
+/* @media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: portrait) {
+	.title {
+		margin-bottom: 3vh !important;
+	}
+} */
 /* **********iPHONE 5SE********** */
 
 @media only screen 
@@ -771,7 +802,6 @@ nav {
 		color: #e2c41d;
 		width: 40vw;
 		font-family: acme;
-		
 	}
 }
 
@@ -871,8 +901,8 @@ nav {
 		color: #e2c41d;
 		width: 40vw;
 		font-family: acme;
-		
 	}
+
 }
 
 @media only screen 
@@ -889,8 +919,33 @@ nav {
 	}
 }
 
-/* **********SURFACE DUO********** */
+/* **********iPAD********** */
 
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+	.logo {
+		margin-top: 2vh;
+	}
+	
+	#title {
+		margin-bottom: 3vh;
+	}
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+	#title {
+		margin-bottom: 1vh;
+	}
+}
 
 
 
