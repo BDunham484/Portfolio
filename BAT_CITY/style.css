@@ -491,6 +491,7 @@ nav {
 			flex-wrap: wrap;
 			list-style: none;
 			justify-content: space-around;
+			
 		}
 
 		.featured_list_details {
@@ -525,6 +526,372 @@ nav {
 
 
 	  }	 
+
+/* **********MOTO G4********** */
+
+@media only screen 
+    and (min-device-width: 360px)
+    and (max-device-width: 640px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+		#title {
+			margin-bottom: 1vh;
+		}
+
+		#bela {
+			display: none;
+		}
+
+		#mobile {
+			
+			display: flex;
+			flex-direction: column;
+			min-height: 90vh;
+			/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#901d1d+0,202020+100 */
+			background: #901d1d; /* Old browsers */
+			background: -moz-linear-gradient(top,  #901d1d 0%, #202020 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  #901d1d 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  #901d1d 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#901d1d', endColorstr='#202020',GradientType=0 ); /* IE6-9 */
+		}
+
+		#bela-mobile-image {
+			display: flex;
+			flex-direction: column;
+			justify-content: start;
+			align-items: center;
+			height: 38vh;
+			color: #e2c41d;
+			font-family: creepster;
+			font-size: 40px;
+		}
+
+		#bela-mobile-image img {
+			margin-top: 11vh;
+			width: 100vw;
+		}
+
+		.item_description {
+			width: 40vw;
+		}
+
+		#featured_list {
+			display: flex;
+			flex-wrap: wrap;
+			list-style: none;
+			justify-content: space-around;
+			margin-top: 3vh;
+		}
+
+		.featured_list_details {
+			list-style: none;
+		}
+
+		.featured_img_size {
+			width: 40vw;
+			height: auto;
+		}
+
+		.featured_item_description {
+			color: #e2c41d;
+			width: 40vw;
+			font-family: acme;
+			
+		}
+	}
+	
+
+	@media only screen 
+    and (min-device-width: 360px)
+    and (max-device-width: 640px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+		#title {
+			margin-bottom: 1vh;
+		}
+
+		#mobile {
+			display: none;
+		}
+	}
+
+/* ***********GALAXY S5 PORTRAIT********** */
+
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+	#title {
+		margin-bottom: 1vh;
+	}
+
+	#bela {
+		display: none;
+	}
+
+	#mobile {
+		
+		display: flex;
+		flex-direction: column;
+		min-height: 90vh;
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#901d1d+0,202020+100 */
+		background: #901d1d; /* Old browsers */
+		background: -moz-linear-gradient(top,  #901d1d 0%, #202020 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #901d1d 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #901d1d 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#901d1d', endColorstr='#202020',GradientType=0 ); /* IE6-9 */
+	}
+
+	#bela-mobile-image {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		height: 38vh;
+		color: #e2c41d;
+		font-family: creepster;
+		font-size: 40px;
+	}
+
+	#bela-mobile-image img {
+		margin-top: 11vh;
+		width: 100vw;
+	}
+
+	.item_description {
+		width: 40vw;
+	}
+
+	#featured_list {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		justify-content: space-around;
+	}
+
+	.featured_list_details {
+		list-style: none;
+	}
+
+	.featured_img_size {
+		width: 40vw;
+		height: auto;
+	}
+
+	.featured_item_description {
+		color: #e2c41d;
+		width: 40vw;
+		font-family: acme;
+		
+	}
+}
+
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+	#title {
+		margin-bottom: 1vh;
+	}
+
+	#mobile {
+		display: none;
+	}
+}
+
+
+/* **********iPHONE 5SE********** */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+	#title {
+		margin-bottom: 1vh;
+	}
+
+	#bela {
+		display: none;
+	}
+
+	#mobile {
+		
+		display: flex;
+		flex-direction: column;
+		min-height: 90vh;
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#901d1d+0,202020+100 */
+		background: #901d1d; /* Old browsers */
+		background: -moz-linear-gradient(top,  #901d1d 0%, #202020 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #901d1d 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #901d1d 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#901d1d', endColorstr='#202020',GradientType=0 ); /* IE6-9 */
+	}
+
+	#bela-mobile-image {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		height: 38vh;
+		color: #e2c41d;
+		font-family: creepster;
+		font-size: 40px;
+	}
+
+	#bela-mobile-image img {
+		margin-top: 11vh;
+		width: 100vw;
+	}
+
+	.item_description {
+		width: 40vw;
+	}
+
+	#featured_list {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		justify-content: space-around;
+		margin-top: 4vh;
+	}
+
+	.featured_list_details {
+		list-style: none;
+	}
+
+	.featured_img_size {
+		width: 40vw;
+		height: auto;
+	}
+
+	.featured_item_description {
+		color: #e2c41d;
+		width: 40vw;
+		font-family: acme;
+		
+	}
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+	#title {
+		margin-bottom: 1vh;
+	}
+
+	#mobile {
+		display: none;
+	}
+}
+
+/* **********iPHONE 6/7/8 PLUS********** */
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+	#featured_list {
+		margin-top: 3vh !important;
+	}
+}
+
+
+/* **********iPHONE X********** */
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+	#title {
+		margin-bottom: 1vh;
+	}
+
+	#bela {
+		display: none;
+	}
+
+	#mobile {
+		
+		display: flex;
+		flex-direction: column;
+		min-height: 90vh;
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#901d1d+0,202020+100 */
+		background: #901d1d; /* Old browsers */
+		background: -moz-linear-gradient(top,  #901d1d 0%, #202020 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #901d1d 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #901d1d 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#901d1d', endColorstr='#202020',GradientType=0 ); /* IE6-9 */
+	}
+
+	#bela-mobile-image {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		height: 38vh;
+		color: #e2c41d;
+		font-family: creepster;
+		font-size: 40px;
+	}
+
+	#bela-mobile-image img {
+		margin-top: 11vh;
+		width: 100vw;
+	}
+
+	.item_description {
+		width: 40vw;
+	}
+
+	#featured_list {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		justify-content: space-around;
+		margin: 0;
+	}
+
+	.featured_list_details {
+		list-style: none;
+	}
+
+	.featured_img_size {
+		width: 40vw;
+		height: auto;
+	}
+
+	.featured_item_description {
+		color: #e2c41d;
+		width: 40vw;
+		font-family: acme;
+		
+	}
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+	#title {
+		margin-bottom: 1vh;
+	}
+
+	#mobile {
+		display: none;
+	}
+}
+
+/* **********SURFACE DUO********** */
+
+
 
 
 
