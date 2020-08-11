@@ -68,11 +68,12 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 
 /* 1ST ROW - LOGO */
 #logo {
-    background-image: url("./Images/main12.jpg");
+    background-image: url("./Images/desktop-background-image.jpg");
     min-height: 100vh;
+    width: auto;
     background-attachment: fixed;
     background-size: cover;
-    background-position: 30% 15%;
+    background-position: center;
     }
 
 /* 1ST ROW - LOGO COLOR AND POSITIONING */
@@ -309,26 +310,29 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 @media only screen 
     and (device-width : 414px) 
     and (device-height : 896px) 
-    and (-webkit-device-pixel-ratio : 2) {
+    and (-webkit-device-pixel-ratio : 2)
+    and (orientation: portrait) {
         #logo {
-            background-image: url("./Images/main1.jpg");
-            background-repeat: no-repeat;
-            background-size: 170% auto;
-            background-position: top;
-            height: 100%;
-            position: fixed !important;
-            width: 100%;
-            z-index: -2;
+            background-image: url("./Images/mobile-background-image.jpg");
+            height: 100vh;
+            width: 100vw;
+            background-attachment: scroll;
+            background-size: cover;
+            position: fixed;
+            /* background-position: top;
+            background-repeat: no-repeat; */
             top: 0;
-            }
+            z-index: -1;
+
+        }
 
         #about {
-            padding-top: 92vh;
-            display: table;
-            position: relative;
-            width: 100%;
-            height: 100%;
+            margin-top: 92vh;
         }
+
+        
+
+        
 
         #bookNow2 {
             margin-bottom: 7vh;
