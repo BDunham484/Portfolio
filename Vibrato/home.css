@@ -5,7 +5,7 @@
 
 .navbar-brand {
     /* font-family: 'New Rocker', cursive; */
-font-family: 'Monoton', cursive;
+font-family: 'Monoton', montserrat;
 /* font-family: 'Black Ops One', cursive;
 font-family: 'Allerta Stencil', sans-serif;
 font-family: 'Metal Mania', cursive;
@@ -32,7 +32,7 @@ word-spacing: 0.5em;
 
 .navbar-custom .navbar-nav .nav-link {
     color: #bff463;
-    font-family: 'Faster One', cursive;
+    font-family: 'Faster One', montserrat;
 }
 
 .navbar-custom .navbar-nav .nav-item.active .nav-link{
@@ -348,11 +348,54 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
             color: #bff463;
         }
 
-        
+        #bookNow2 {
+            margin-bottom: 7vh;
+        }
+    }
 
-        
 
-        
+    @media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2)
+    and (orientation: landscape) {
+        #logo {
+            background-image: url("./Images/mobile-background-image.jpg");
+            height: 100vh;
+            width: 100vw;
+            background-attachment: scroll;
+            background-size: cover;
+            position: fixed;
+            /* background-position: top;
+            background-repeat: no-repeat; */
+            top: 20%;
+            z-index: -2;
+        }
+
+        .vibrato {
+            padding: 0;
+            margin-top: 5vh;
+            font-size: 200px;
+
+        }
+
+        #about {
+            margin-top: 92vh;
+        }
+
+        #services {
+            background-image: none;
+        }
+
+        .card-text {
+            display: none;
+        }
+
+        #mobile-text {
+            display: inline-block;
+            font-family: 'Courier New', Courier, monospace;
+            color: #bff463;
+        }
 
         #bookNow2 {
             margin-bottom: 7vh;
