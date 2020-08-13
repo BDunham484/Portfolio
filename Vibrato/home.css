@@ -1,7 +1,4 @@
-html, body {
-    overscroll-behavior-y: none;
-   
-}
+
 
 
 /* NAVBAR */
@@ -152,6 +149,10 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
     color: #bff463;
 }
 
+#mobile-text {
+    display: none;
+}
+
 /* #img-about {
     padding-left: 15%
     
@@ -251,14 +252,12 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 #contact {
     background-color:#202020;
     min-height: 65vh;
-    
-    
-}
+    }
+
 #map {
     background-color: #202020;
     min-height: 35vh;
-   
-}
+   }
 
 .address {
     color: #bff463;
@@ -328,14 +327,28 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
             /* background-position: top;
             background-repeat: no-repeat; */
             top: 0;
-            z-index: -1;
-            overflow-y: clip;
-
+            z-index: -2;
         }
 
         #about {
             margin-top: 92vh;
         }
+
+        #services {
+            background-image: none;
+        }
+
+        .card-text {
+            display: none;
+        }
+
+        #mobile-text {
+            display: inline-block;
+            font-family: 'Courier New', Courier, monospace;
+            color: #bff463;
+        }
+
+        
 
         
 
