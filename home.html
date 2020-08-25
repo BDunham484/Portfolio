@@ -237,11 +237,14 @@
             <li>
                 <div id="contact-container">
                     <form id="contact-form" method="post" action="contact-form.php">
-                        <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+                        <input id="name" name="name" type="text" class="form-control" placeholder="Your Name" required>
+                        <label for="name">Input your name</label>
                         <br>
-                        <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+                        <input id="email" name="email" type="email" class="form-control" placeholder="Your Email" required>
+                        <label for="email">Input your email address</label>
                         <br>
-                        <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea>
+                        <textarea id="message" name="message" class="form-control" placeholder="Message" row="4" required></textarea>
+                        <label for="message">Input your message</label>
                         <br>
                         <input type="submit" class="form-control submit" value="Contact">
                     </form>
