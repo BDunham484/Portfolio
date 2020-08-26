@@ -608,13 +608,21 @@ form {
 }
 
 .form-control {
-    width: 40vw;
+    width: 100%;
     background: transparent;
     border: none;
     outline: none;
     border-bottom: 1px solid antiquewhite;
     color: antiquewhite;
     font-size: 16px;
+    padding-left: 2vh;
+}
+
+.form_label {
+    width: 50vw;
+    font-size: 16px;
+    display: inline-block;
+    text-align: left;
 }
 
 
@@ -645,6 +653,7 @@ form .submit {
     letter-spacing: 2px;
     height: 50px;
     margin-top: 20px;
+    width: 40vw;
 }
 
 form .submit:hover {
