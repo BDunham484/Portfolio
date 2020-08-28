@@ -246,11 +246,19 @@ nav {
     left: 33.5%;    
 }
 
+#mobile-triangle2 {
+    display: none;
+}
+
 #triangle3 {
     height: 50vh;
     position: absolute;
     top: 42%;
     left: 42%;
+}
+
+#mobile-triangle3 {
+    display: none;
 }
 
 
@@ -1020,20 +1028,30 @@ form .submit:hover {
             left: 0; 
         }
 
-
-        
         #triangle2 {
+            display: none;  
+        }
+
+        #mobile-triangle2 {
+            display: inline-block;
             height: 50vh;
             position: absolute;
             top: 35%;
-            left: 5%;    
+            left: 50%;
+            margin-left: -160px;
         }
         
         #triangle3 {
+            display: none;
+        }
+
+        #mobile-triangle3 {
+            display: inline-block;
             height: 50vh;
             position: absolute;
             top: 42%;
-            left: 5%;
+            left: 50%;
+            margin-left: -160px;
         }
 
         #contact {
@@ -1060,13 +1078,23 @@ form .submit:hover {
         }
         
         #triangle2 {
+            display: none;    
+        }
+
+        #mobile-triangle2 {
+            display: inline-block;
             height: 50vh;
             position: absolute;
             top: 35%;
-            left: 33%;    
+            left: 33%;
         }
         
         #triangle3 {
+            display: none;
+        }
+
+        #mobile-triangle3 {
+            display: inline-block;
             height: 50vh;
             position: absolute;
             top: 42%;
@@ -1098,13 +1126,23 @@ and (orientation: portrait) {
     }
 
     #triangle2 {
+        display: none;   
+    }
+
+    #mobile-triangle2 {
+        display: inline-block;
         height: 50vh;
         position: absolute;
         top: 35%;
-        left: 7%;    
+        left: 7%;
     }
 
     #triangle3 {
+        display: none;
+    }
+
+    #mobile-triangle3 {
+        display: inline-block;
         height: 50vh;
         position: absolute;
         top: 42%;
@@ -1137,15 +1175,25 @@ and (orientation: portrait) {
             top: 0;
             left: 0;
         }
-        
+
         #triangle2 {
+            display: none;
+        }
+        
+        #mobile-triangle2 {
+            display: inline-block;
             height: 50vh;
             position: absolute;
             top: 35%;
             left: 33%;    
         }
-        
+
         #triangle3 {
+            display: none;
+        }
+        
+        #mobile-triangle3 {
+            display: inline-block;
             height: 50vh;
             position: absolute;
             top: 42%;
@@ -1174,20 +1222,30 @@ and (orientation: portrait) {
         top: 0;
         left: 0;
     }
-    
+
     #triangle2 {
+        display: none;
+    }
+    
+    #mobile-triangle2 {
+        display: inline-block;
         height: 42vh;
         position: absolute;
         top: 35%;
-        left: 0;    
+        left: 7%;    
+    }
+
+    #triangle3 {
+        display: none;
     }
     
-    #triangle3 {
+    #mobile-triangle3 {
+        display: inline-block;
         height: 42vh;
         position: absolute;
         top: 42%;
-        left: auto;
-        right: 0;
+        left: 7%;
+        
     }
 
     #contact {
