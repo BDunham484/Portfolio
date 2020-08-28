@@ -813,16 +813,19 @@ form .submit:hover {
         height: 50vh;
         position: absolute;
         top: 35%;
-        left: 50%;
-        transform: translate(-50%);   
+        left: 0;
+        right: 0;
+        margin: auto; 
     }
     
     #triangle3 {
         height: 50vh;
         position: absolute;
         top: 42%;
-        left: 50%;
-        transform: translate(-50%); 
+        left: 0;
+        right: 0;
+        margin: auto;
+        
     }
 }
 
@@ -1630,7 +1633,7 @@ and (orientation: portrait) {
             display: none;
         }
 
-        #mobile-triangle {
+        #mobile-triangle1 {
             display: inline-block;
             height: 58vh;
             position: relative;
@@ -1759,3 +1762,49 @@ and (orientation: portrait) {
         padding-bottom: 7vh;
     }
 }
+
+
+/* @media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (orientation:portrait)
+    and (-webkit-device-pixel-ratio : 2) {
+        #triangle1 {
+            display: none; 
+        }
+
+        #mobile-triangle1 {
+            display: inline-block;
+            height: 48vh;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        #triangle2 {
+            display: none;
+        }
+        
+        #mobile-triangle2 {
+            display: inline-block;
+            height: 40vh;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%); 
+        }
+
+        #triangle3 {
+            display: none;
+        }
+        
+        #mobile-triangle3 {
+            display: inline-block;
+            height: 40vh;
+            position: absolute;
+            top: 42%;
+            left: 50%;
+            transform: translate(-50%); 
+        }
+
+     } */
