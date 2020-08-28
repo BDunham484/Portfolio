@@ -813,14 +813,16 @@ form .submit:hover {
         height: 50vh;
         position: absolute;
         top: 35%;
-        left: 3%;    
+        left: 50%;
+        transform: translate(-50%);   
     }
     
     #triangle3 {
         height: 50vh;
         position: absolute;
         top: 42%;
-        left: 3%;
+        left: 50%;
+        transform: translate(-50%); 
     }
 }
 
@@ -1038,7 +1040,7 @@ form .submit:hover {
             position: absolute;
             top: 35%;
             left: 50%;
-            margin-left: -160px;
+            transform: translate(-50%);
         }
         
         #triangle3 {
@@ -1051,7 +1053,7 @@ form .submit:hover {
             position: absolute;
             top: 42%;
             left: 50%;
-            margin-left: -160px;
+            transform: translate(-50%);
         }
 
         #contact {
@@ -1134,7 +1136,8 @@ and (orientation: portrait) {
         height: 50vh;
         position: absolute;
         top: 35%;
-        left: 7%;
+        left: 50%;
+        transform: translate(-50%);
     }
 
     #triangle3 {
@@ -1146,7 +1149,8 @@ and (orientation: portrait) {
         height: 50vh;
         position: absolute;
         top: 42%;
-        left: 7%;
+        left: 50%;
+        transform: translate(-50%);
     }
 
     #contact {
@@ -1232,7 +1236,8 @@ and (orientation: portrait) {
         height: 42vh;
         position: absolute;
         top: 35%;
-        left: 7%;    
+        left: 50%;
+        transform: translate(-50%);    
     }
 
     #triangle3 {
@@ -1244,7 +1249,8 @@ and (orientation: portrait) {
         height: 42vh;
         position: absolute;
         top: 42%;
-        left: 7%;
+        left: 50%;
+        transform: translate(-50%);  
         
     }
 
@@ -1270,15 +1276,25 @@ and (orientation: portrait) {
             top: 0;
             left: 0;
         }
-        
+
         #triangle2 {
+            display: none;
+        }
+        
+        #mobile-triangle2 {
+            display: inline-block;
             height: 50vh;
             position: absolute;
             top: 35%;
             left: 33%;    
         }
-        
+
         #triangle3 {
+            display: none;
+        }
+        
+        #mobile-triangle3 {
+            display: inline-block;
             height: 50vh;
             position: absolute;
             top: 42%;
@@ -1310,19 +1326,31 @@ and (orientation: portrait) {
             top: 0;
             left: 0;
         }
-        
+
         #triangle2 {
+            display: none;
+        }
+        
+        #mobile-triangle2 {
+            display: inline-block;
             height: 50vh;
             position: absolute;
             top: 35%;
-            left: 5%;    
+            left: 50%;
+            transform: translate(-50%);  
+        }
+
+        #triangle3 {
+            display: none;
         }
         
-        #triangle3 {
+        #mobile-triangle3 {
+            display: inline-block;
             height: 50vh;
             position: absolute;
             top: 42%;
-            left: 5%;
+            left: 50%;
+            transform: translate(-50%);
         }
 
         #contact {
@@ -1375,23 +1403,31 @@ and (orientation: portrait) {
             top: 0;
             left: 0;
         }
-        
+
         #triangle2 {
+            display: none;
+        }
+        
+        #mobile-triangle2 {
+            display: inline-block;
             height: 42vh;
             position: absolute;
             top: 35%;
-            left: 0;
-            right: 0;
-            margin: auto;   
+            left: 50%;
+            transform: translate(-50%);    
+        }
+
+        #triangle3 {
+            display: none;
         }
         
-        #triangle3 {
+        #mobile-triangle3 {
+            display: inline-block;
             height: 42vh;
             position: absolute;
             top: 42%;
-            left: 0;
-            right: 0;
-            margin: auto;
+            left: 50%;
+            transform: translate(-50%); 
         }
     }
 
@@ -1413,15 +1449,25 @@ and (orientation: portrait) {
             top: 0;
             left: 0;
         }
-        
+
         #triangle2 {
+            display: none;
+        }
+        
+        #mobile-triangle2 {
+            display: inline-block;
             height: 50vh;
             position: absolute;
             top: 35%;
             left: 33%;    
         }
-        
+
         #triangle3 {
+            display: none;
+        }
+        
+        #mobile-triangle3 {
+            display: inline-block;
             height: 50vh;
             position: absolute;
             top: 42%;
@@ -1446,20 +1492,31 @@ and (orientation: portrait) {
             top: 0;
             left: 0;
         }
-        
+
         #triangle2 {
+            display: none;
+        }
+        
+        #mobile-triangle2 {
+            display: inline-block;
             height: 42vh;
             position: absolute;
             top: 35%;
-            left: 0;    
+            left: 50%;
+            transform: translate(-50%);    
+        }
+
+        #triangle3 {
+            display: none;
         }
         
-        #triangle3 {
+        #mobile-triangle3 {
+            display: inline-block;
             height: 42vh;
             position: absolute;
             top: 42%;
-            left: auto;
-            right: 0;
+            left: 50%;
+            transform: translate(-50%); 
         }
 
         #contact {
@@ -1484,15 +1541,25 @@ and (orientation: portrait) {
             top: 0;
             left: 0;
         }
-        
+
         #triangle2 {
+            display: none;
+        }
+        
+        #mobile-triangle2 {
+            display: inline-block;
             height: 50vh;
             position: absolute;
             top: 35%;
             left: 33%;    
         }
-        
+
         #triangle3 {
+            display: none;
+        }
+        
+        #mobile-triangle3 {
+            display: inline-block;
             height: 50vh;
             position: absolute;
             top: 42%;
@@ -1521,24 +1588,32 @@ and (orientation: portrait) {
             top: 0;
             left: 0;
         }
-        
+
         #triangle2 {
+            display: none;
+        }
+        
+        #mobile-triangle2 {
+            display: inline-block;
             height: 40vh;
             position: absolute;
             top: 35%;
-            left: 0;
-            right: 0;
-            margin: auto;
-            }
-        
+            left: 50%;
+            transform: translate(-50%); 
+        }
+
         #triangle3 {
+            display: none;
+        }
+        
+        #mobile-triangle3 {
+            display: inline-block;
             height: 40vh;
             position: absolute;
             top: 42%;
-            left: 0;
-            right: 0;
-            margin: auto;
-            }
+            left: 50%;
+            transform: translate(-50%); 
+        }
 
         #contact {
             padding-bottom: 7vh;
@@ -1562,15 +1637,25 @@ and (orientation: portrait) {
             top: 0;
             left: 0;
         }
-        
+
         #triangle2 {
+            display: none;
+        }
+        
+        #mobile-triangle2 {
+            display: inline-block;
             height: 50vh;
             position: absolute;
             top: 35%;
             left: 33%;    
         }
-        
+
         #triangle3 {
+            display: none;
+        }
+        
+        #mobile-triangle3 {
+            display: inline-block;
             height: 50vh;
             position: absolute;
             top: 42%;
@@ -1599,18 +1684,16 @@ and (orientation: portrait) {
         height: 50vh;
         position: absolute;
         top: 35%;
-        left: 0;
-        right: 0;
-        margin: auto;
+        left: 50%;
+        transform: translate(-50%);
         }
     
     #triangle3 {
         height: 50vh;
         position: absolute;
         top: 42%;
-        left: 0;
-        right: 0;
-        margin: auto;
+        left: 50%;
+        transform: translate(-50%);
         }
     
     #contact {
@@ -1648,18 +1731,16 @@ and (orientation: portrait) {
         height: 50vh;
         position: absolute;
         top: 35%;
-        left: 0;
-        right: 0;
-        margin: auto;
+        left: 50%;
+        transform: translate(-50%);
         }
     
     #triangle3 {
         height: 50vh;
         position: absolute;
         top: 42%;
-        left: 0;
-        right: 0;
-        margin: auto;
+        left: 50%;
+        transform: translate(-50%);
         }
 
     #contact {
