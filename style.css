@@ -1021,6 +1021,8 @@ form .submit:hover {
     and (max-device-width: 640px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: portrait) {
+        
+
         #triangle1 { 
             display: none;
         }
@@ -1315,7 +1317,7 @@ and (orientation: portrait) {
     and (max-device-width: 568px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: portrait) {
-        #title {
+       #title {
             font-size: 8px;
         }
         #triangle1 {
@@ -1340,7 +1342,8 @@ and (orientation: portrait) {
             position: absolute;
             top: 35%;
             left: 50%;
-            transform: translate(-50%);  
+            transform: translate(-50%);
+            
         }
 
         #triangle3 {
@@ -1763,12 +1766,14 @@ and (orientation: portrait) {
     }
 }
 
-
-/* @media only screen 
+/* **********XR********** */
+@media only screen 
     and (device-width : 414px) 
     and (device-height : 896px) 
     and (orientation:portrait)
     and (-webkit-device-pixel-ratio : 2) {
+        
+
         #triangle1 {
             display: none; 
         }
@@ -1807,4 +1812,4 @@ and (orientation: portrait) {
             transform: translate(-50%); 
         }
 
-     } */
+     }
