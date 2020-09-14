@@ -477,3 +477,19 @@ input[type="checkbox"]{
     background-position: 89%;
   }
 }
+
+
+
+
+
+@media only screen 
+  and (max-device-width: 500px)
+  and (orientation: landscape) {
+    #iphone-container {
+      display: none;
+    }
+
+    #iphone-mockup {
+      display: none;
+    }
+  }
