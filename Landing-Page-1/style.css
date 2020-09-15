@@ -344,6 +344,14 @@ input[type="checkbox"]{
   }
 }
 
+
+
+
+
+
+
+
+
 @media (max-width: 920px) {
   nav .menu-btn i{
     display: block;
@@ -415,6 +423,10 @@ input[type="checkbox"]{
 
 
 
+
+
+
+
 @media (max-width: 720px) {
   #headline-text {
     width: 65vw;
@@ -453,6 +465,10 @@ input[type="checkbox"]{
 
 
 
+
+
+
+
 @media (max-width: 500px) {
   nav ul {
     top: 180px;
@@ -482,14 +498,36 @@ input[type="checkbox"]{
 
 
 
+
+
+
 @media only screen 
-  and (max-device-width: 500px)
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
     #iphone-container {
       display: none;
     }
 
-    #iphone-mockup {
-      display: none;
+    #headline-text {
+      width: 550px;
+    }
+
+    nav ul li a{
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+
+    nav ul li {
+      margin: 0 0;
+    }
+
+    nav ul {
+      margin-top: 50px;
     }
   }
+
+
+
+
