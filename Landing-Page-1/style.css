@@ -605,7 +605,8 @@ and (orientation: landscape) {
 
 @media only screen 
   and (min-device-width: 411px) 
-  and (max-device-width: 731px) {
+  and (max-device-width: 731px)
+  and (orientation: landscape) {
   #iphone-container {
     display: none; 
   }
