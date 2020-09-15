@@ -499,34 +499,73 @@ input[type="checkbox"]{
 
 
 
-
+/* **********iPhone 6/7/8, Moto G4, Galaxy S5, iPhone5/SE**********  */
 
 @media only screen 
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+  #iphone-container {
+    display: none;
+  }
+
+  #headline-text {
+    width: 550px;
+  }
+
+  nav ul li a{
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  nav ul li {
+    margin: 0 0;
+  }
+
+  nav ul {
+    margin-top: 50px;
+  }
+}
+
+
+
+
+
+
+/* **********iPHone X, iPhone 6/7/8/ Plus********** */
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
     #iphone-container {
       display: none;
-    }
-
-    #headline-text {
-      width: 550px;
     }
 
     nav ul li a{
       padding-bottom: 0;
       padding-top: 0;
     }
+}
 
-    nav ul li {
-      margin: 0 0;
-    }
 
-    nav ul {
-      margin-top: 50px;
+
+
+
+
+**********PIXEL 2 XL**********
+
+@media only screen 
+  and (min-device-width: 412px) 
+  and (max-device-height: 823px) 
+  and (-webkit-min-device-pixel-ratio: 3.5) 
+  and (orientation: landscape) {
+    #iphone-container {
+      display: none;
     }
-  }
+}
 
 
 
