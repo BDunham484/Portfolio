@@ -526,8 +526,28 @@ and (orientation: landscape) {
   nav ul {
     margin-top: 50px;
   }
+
+  #press {
+    margin-bottom: 100vh;
+  }
 }
 
+
+
+
+
+/* **********iPhone 5/5s/5c/5se********** */
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    #press {
+      margin-bottom: 150vh;
+    }
+}
 
 
 
@@ -548,6 +568,10 @@ and (orientation: landscape) {
       padding-bottom: 0;
       padding-top: 0;
     }
+
+    #press {
+      margin-bottom: 95vh;
+    }
 }
 
 
@@ -565,6 +589,10 @@ and (orientation: landscape) {
     #iphone-container {
       display: none;
     }
+
+    #press {
+      margin-bottom: 80vh;
+    }
 }
 
 
@@ -579,7 +607,12 @@ and (orientation: landscape) {
   and (min-device-width: 411px) 
   and (max-device-width: 731px) {
   #iphone-container {
-    display: none;
+    display: none; 
+  }
+
+  #press {
+    margin-bottom: 80vh;
+  }
 }
 
 
