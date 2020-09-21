@@ -76,8 +76,17 @@ input[type="checkbox"]{
 
 /* **********HEADER********** */
 
-#home {
+.no-webp #home {
     background-image: url(../Landing-Page-1/images/female-runner-silhouette.jpg);
+    height: 100vh;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+
+.webp #home {
+    background-image: url(../Landing-Page-1/images/female-runner-silhouette.webp);
     height: 100vh;
     width: auto;
     background-size: cover;
@@ -489,7 +498,7 @@ input[type="checkbox"]{
     align-items: center;
   }
 
-  #home {
+  .no-webp #home {
     background-position: 89%;
   }
 }
