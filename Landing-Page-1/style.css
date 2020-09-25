@@ -501,6 +501,10 @@ input[type="checkbox"]{
   .no-webp #home {
     background-position: 89%;
   }
+
+  .webp #home {
+    background-position: 89%;
+  }
 }
 
 
