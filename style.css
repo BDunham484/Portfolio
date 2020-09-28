@@ -8,16 +8,8 @@
     background-color: transparent;
 }
 
-html {
-    height  : 100%;
-    overflow: hidden;
-    position: relative;
-}
-body {
-    height  : 100%;
-    overflow: auto;
-    position: relative;
-}
+
+
 
 
 /* **********NAV/HEADER********** */
@@ -249,19 +241,11 @@ nav {
     left: 0;  
 }
 
-#mobile-triangle1 {
-    display: none;
-}
-
 #triangle2 {
     height: 50vh;
     position: absolute;
     top: 35%;
     left: 33.5%;    
-}
-
-#mobile-triangle2 {
-    display: none;
 }
 
 #triangle3 {
@@ -271,9 +255,6 @@ nav {
     left: 42%;
 }
 
-#mobile-triangle3 {
-    display: none;
-}
 
 
 
