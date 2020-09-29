@@ -1,0 +1,970 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+*::selection 
+{
+    background-color:transparent;
+} 
+*::-moz-selection
+{
+    background-color:transparent;
+}
+
+
+/* Body */
+body {
+	background-color: #1f1414;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: #901d1d;
+    font-family: creepster;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+	}
+	
+.logo a{
+	color: #e2c41d;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 40px;
+	text-decoration: none;
+}
+
+.logo li {
+	list-style: none;
+}
+
+#title {
+	color: #e2c41d;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+
+	font-size: 11px;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 10px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+	width: 50%;
+}
+
+
+
+.nav-links li {
+	list-style: none;
+}
+
+.nav-links a {
+	color: #e2c41d;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-size: 15px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.nav-links a:hover {
+	color: antiquewhite;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 30px;
+    height: 2px;
+    background-color: #e2c41d;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
+
+/* HOME SCREEN BACKGROUND */
+
+#bela {
+	background-image: url(./Images/basillogo.jpg);
+	margin-top: 10vh;
+	min-height: 90vh;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+#bela-mobile-image {
+	display: none;
+}
+
+#mobile {
+	display: none;
+}
+
+
+
+/* 12 INCH FIGURES */
+
+.itemsforsale {
+	margin-top: 15vh;
+	color: #e2c41d;
+	
+	
+}
+
+.itemsforsale ul{
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-bottom: 5vh;
+	
+}
+
+.items {
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 3px;
+	
+}
+
+.item_description {
+	width: 20vw;
+}
+
+.items li a img{
+	width: 20vw;
+	height: auto;
+}
+
+.price {
+	color: #901d1d;
+	font-weight: bold;
+	font-family: acme;
+	font-size: 20px;
+}
+
+
+/* **********ITEM DETAILS********** */
+
+#itemdetails {
+	display: flex;
+	padding-top: 15vh;
+}
+
+.itemimages {
+	padding-left: 8vw;
+}
+
+.itemimages li img {
+	width: 40vw;
+	height: auto;
+	padding-bottom: 5vh;
+}
+
+.itemdescription {
+	padding-left: 11vw;
+	width: 45vw;
+	position: fixed;
+	margin-left: 48vw;
+	color: #e2c41d;
+	list-style: none;
+	font-family: acme;
+	
+}
+
+.itemdescription ul {
+	list-style: none;
+}
+
+.title {
+	color: #901d1d;
+	font-family: acme;
+	font-size: 30px;
+	padding-top: 1vh;
+	padding-bottom: 4vh;
+	text-align: center;
+	
+}
+
+#availability {
+	padding-bottom: 3vh;
+}
+
+.itemprice {
+	font-family: acme;
+	font-size: 25px;
+	/* padding-left: 1vw; */
+	padding-bottom: 4vh;
+
+}
+
+.select-size input {
+	display: none;
+}
+
+.sizes {
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	text-align: center;
+	border: 1px solid #901d1d;
+	line-height: 40px;
+	cursor: pointer
+}
+
+#x-small:checked ~ label[for="x-small"],
+#small:checked ~ label[for="small"],
+#medium:checked ~ label[for="medium"],
+#large:checked ~ label[for="large"],
+#x-large:checked ~ label[for="x-large"],
+#xx-large:checked ~ label[for="xx-large"], 
+#xxx-large:checked ~ label[for="xxx-large"] {
+	background: #e2c41d;
+	color: #202020;
+}
+
+#quantity {
+	margin-top: 1vh;
+}
+
+					form {
+						width: 125px;
+						/* margin: 0 auto; */
+						text-align: center;
+						padding-top: 1vh;
+					}
+
+					#increments {
+						color: white;
+					}
+					
+					.value-button {
+						display: inline-block;
+						/* border: 1px solid #ddd; */
+						margin: 0px;
+						width: 40px;
+						height: 40px;
+						text-align: center;
+						vertical-align: middle;
+						padding: 11px 0;
+						background: darkgray;
+						-webkit-touch-callout: none;
+						-webkit-user-select: none;
+						-khtml-user-select: none;
+						-moz-user-select: none;
+						-ms-user-select: none;
+						user-select: none;
+					}
+					
+					.value-button:hover {
+						cursor: pointer;
+					}
+					
+					form #decrease {
+						margin-right: -4px;
+						border-radius: 8px 0 0 8px;
+					}
+					
+					form #increase {
+						margin-left: -4px;
+						border-radius: 0 8px 8px 0;
+					}
+					
+					/* form #input-wrap {
+						margin: 0px;
+						padding: 0px;
+					} */
+					
+					input#number {
+						text-align: center;
+						border: none;
+						/* border-top: 1px solid #ddd;
+						border-bottom: 1px solid #ddd; */
+						margin: 0px;
+						width: 40px;
+						height: 40px;
+						vertical-align: middle;
+					}
+					
+					input[type=number]::-webkit-inner-spin-button,
+					input[type=number]::-webkit-outer-spin-button {
+						-webkit-appearance: none;
+						margin: 0;
+					}				
+
+.description {
+	font-family: acme;
+	/* padding-left: 1vw; */
+	font-size: 20px;
+}
+
+.addtocart {
+	width: 120px;
+	height: 50px;
+	background-color: #e2c41d;
+	margin-left: 1px;
+	margin-top: 5vh;
+	font-size: 22px;
+	font-family: acme;
+	text-align: center;
+	border: none;
+	
+}
+
+.addtocart a {
+	text-decoration: none;
+	color: #383737;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* **********MEDIA QUERIES********** */
+@media screen and (max-width: 1100px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: fixed;
+        right: 0px;
+        height: 89vh;
+        top: 11vh;
+        background-color: #901d1d;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        /* transition: transform 0.5s ease-in; */
+        
+    }
+
+    .nav-in {
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+		opacity: 0;
+		
+    }
+
+    .burger {
+        display: block;
+	}
+	
+	.items li a img{
+		width: 40vw;
+		height: auto;
+	}
+
+	#itemdetails {
+		flex-wrap: wrap;
+		
+	}
+
+	.itemimages li img {
+		width: 80vw;
+		height: auto;
+		padding-bottom: 5vh;
+	}
+
+	.itemdescription {
+		padding-left: 10vw;
+		width: 80vw;
+		position: relative;
+		margin-left: 0;
+		padding-bottom: 20vh;
+		z-index: -1;
+		
+	}
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+    
+}
+
+
+/* **********DEVICES********** */
+
+/* **********iPHONE XR**********     */
+
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+	and (-webkit-device-pixel-ratio : 2)
+	and (orientation : portrait)  {
+		#title {
+			margin-bottom: 1vh;
+		}
+
+		#bela {
+			display: none;
+		}
+
+		#mobile {
+			
+			display: flex;
+			flex-direction: column;
+			min-height: 90vh;
+			/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#901d1d+0,202020+100 */
+			background: #901d1d; /* Old browsers */
+			background: -moz-linear-gradient(top,  #901d1d 0%, #202020 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  #901d1d 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  #901d1d 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#901d1d', endColorstr='#202020',GradientType=0 ); /* IE6-9 */
+		}
+
+		#bela-mobile-image {
+			display: flex;
+			flex-direction: column;
+			justify-content: start;
+			align-items: center;
+			height: 38vh;
+			color: #e2c41d;
+			font-family: creepster;
+			font-size: 40px;
+		}
+
+		#bela-mobile-image img {
+			margin-top: 11vh;
+			width: 100vw;
+		}
+
+		.item_description {
+			width: 40vw;
+		}
+
+		#featured_list {
+			display: flex;
+			flex-wrap: wrap;
+			list-style: none;
+			justify-content: space-around;
+			margin: 0 !important;
+		}
+
+		.featured_list_details {
+			list-style: none;
+		}
+
+		.featured_img_size {
+			width: 40vw;
+			height: auto;
+		}
+
+		.featured_item_description {
+			color: #e2c41d;
+			width: 40vw;
+			font-family: acme;
+			
+		}
+
+		.nav-links {
+			height: 89vh;
+			top: 11vh;
+		}
+	 }
+
+@media only screen 
+	 and (device-width : 414px) 
+	 and (device-height : 896px) 
+	 and (-webkit-device-pixel-ratio : 2)
+	 and (orientation : landscape)  {
+		 #title {
+			 margin-bottom: 1vh;
+		 }
+
+		 #mobile {
+			 display: none;
+		 }
+
+		 .nav-links {
+			height: 86vh;
+			top: 14vh;
+		}
+
+
+	  }	 
+
+/* **********MOTO G4********** */
+
+@media only screen 
+    and (min-device-width: 360px)
+    and (max-device-width: 640px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+		#title {
+			margin-bottom: 1vh;
+		}
+		
+
+		#bela {
+			display: none;
+		}
+
+		#mobile {
+			
+			display: flex;
+			flex-direction: column;
+			min-height: 90vh;
+			/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#901d1d+0,202020+100 */
+			background: #901d1d; /* Old browsers */
+			background: -moz-linear-gradient(top,  #901d1d 0%, #202020 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  #901d1d 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  #901d1d 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#901d1d', endColorstr='#202020',GradientType=0 ); /* IE6-9 */
+		}
+
+		#bela-mobile-image {
+			display: flex;
+			flex-direction: column;
+			justify-content: start;
+			align-items: center;
+			height: 38vh;
+			color: #e2c41d;
+			font-family: creepster;
+			font-size: 40px;
+		}
+
+		#bela-mobile-image img {
+			margin-top: 11vh;
+			width: 100vw;
+		}
+
+		.item_description {
+			width: 40vw;
+		}
+
+		#featured_list {
+			display: flex;
+			flex-wrap: wrap;
+			list-style: none;
+			justify-content: space-around;
+			margin-top: 3vh;
+		}
+
+		.featured_list_details {
+			list-style: none;
+		}
+
+		.featured_img_size {
+			width: 40vw;
+			height: auto;
+		}
+
+		.featured_item_description {
+			color: #e2c41d;
+			width: 40vw;
+			font-family: acme;
+		}
+
+		/* .nav-links {
+			height: 87vh;
+			top: 13vh;
+		} */
+
+}
+	
+
+	@media only screen 
+    and (min-device-width: 360px)
+    and (max-device-width: 640px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+		#title {
+			margin-bottom: 1vh;
+		}
+
+		#mobile {
+			display: none;
+		}
+
+		/* .nav-links {
+			height: 84vh;
+			top: 16vh;
+		} */
+	}
+
+/* ***********GALAXY S5 PORTRAIT********** */
+
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+	#title {
+		margin-bottom: 1vh;
+	}
+
+	#bela {
+		display: none;
+	}
+
+	#mobile {
+		
+		display: flex;
+		flex-direction: column;
+		min-height: 90vh;
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#901d1d+0,202020+100 */
+		background: #901d1d; /* Old browsers */
+		background: -moz-linear-gradient(top,  #901d1d 0%, #202020 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #901d1d 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #901d1d 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#901d1d', endColorstr='#202020',GradientType=0 ); /* IE6-9 */
+	}
+
+	#bela-mobile-image {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		height: 38vh;
+		color: #e2c41d;
+		font-family: creepster;
+		font-size: 40px;
+	}
+
+	#bela-mobile-image img {
+		margin-top: 11vh;
+		width: 100vw;
+	}
+
+	.item_description {
+		width: 40vw;
+	}
+
+	#featured_list {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		justify-content: space-around;
+	}
+
+	.featured_list_details {
+		list-style: none;
+	}
+
+	.featured_img_size {
+		width: 40vw;
+		height: auto;
+	}
+
+	.featured_item_description {
+		color: #e2c41d;
+		width: 40vw;
+		font-family: acme;
+		
+	}
+}
+
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+	#title {
+		margin-bottom: 1vh;
+	}
+
+	#mobile {
+		display: none;
+	}
+}
+
+/* **********GOOGOLE PIXEL********** */
+
+/* @media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: portrait) {
+	.title {
+		margin-bottom: 3vh !important;
+	}
+} */
+/* **********iPHONE 5SE********** */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+	#title {
+		margin-bottom: 1vh;
+	}
+
+	#bela {
+		display: none;
+	}
+
+	#mobile {
+		
+		display: flex;
+		flex-direction: column;
+		min-height: 90vh;
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#901d1d+0,202020+100 */
+		background: #901d1d; /* Old browsers */
+		background: -moz-linear-gradient(top,  #901d1d 0%, #202020 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #901d1d 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #901d1d 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#901d1d', endColorstr='#202020',GradientType=0 ); /* IE6-9 */
+	}
+
+	#bela-mobile-image {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		height: 38vh;
+		color: #e2c41d;
+		font-family: creepster;
+		font-size: 40px;
+	}
+
+	#bela-mobile-image img {
+		margin-top: 11vh;
+		width: 100vw;
+	}
+
+	.item_description {
+		width: 40vw;
+	}
+
+	#featured_list {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		justify-content: space-around;
+		margin-top: 4vh;
+	}
+
+	.featured_list_details {
+		list-style: none;
+	}
+
+	.featured_img_size {
+		width: 40vw;
+		height: auto;
+	}
+
+	.featured_item_description {
+		color: #e2c41d;
+		width: 40vw;
+		font-family: acme;
+	}
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+	#title {
+		margin-bottom: 1vh;
+	}
+
+	#mobile {
+		display: none;
+	}
+}
+
+/* **********iPHONE 6/7/8 PLUS********** */
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+	#featured_list {
+		margin-top: 3vh !important;
+	}
+}
+
+
+/* **********iPHONE X********** */
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+	#title {
+		margin-bottom: 1vh;
+	}
+
+	#bela {
+		display: none;
+	}
+
+	#mobile {
+		
+		display: flex;
+		flex-direction: column;
+		min-height: 90vh;
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#901d1d+0,202020+100 */
+		background: #901d1d; /* Old browsers */
+		background: -moz-linear-gradient(top,  #901d1d 0%, #202020 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #901d1d 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #901d1d 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#901d1d', endColorstr='#202020',GradientType=0 ); /* IE6-9 */
+	}
+
+	#bela-mobile-image {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		height: 38vh;
+		color: #e2c41d;
+		font-family: creepster;
+		font-size: 40px;
+	}
+
+	#bela-mobile-image img {
+		margin-top: 11vh;
+		width: 100vw;
+	}
+
+	.item_description {
+		width: 40vw;
+	}
+
+	#featured_list {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		justify-content: space-around;
+		margin: 0;
+	}
+
+	.featured_list_details {
+		list-style: none;
+	}
+
+	.featured_img_size {
+		width: 40vw;
+		height: auto;
+	}
+
+	.featured_item_description {
+		color: #e2c41d;
+		width: 40vw;
+		font-family: acme;
+	}
+
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+	#title {
+		margin-bottom: 1vh;
+	}
+
+	#mobile {
+		display: none;
+	}
+}
+
+/* **********iPAD********** */
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+	.logo {
+		margin-top: 2vh;
+	}
+	
+	#title {
+		margin-bottom: 3vh;
+	}
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+	#title {
+		margin-bottom: 1vh;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

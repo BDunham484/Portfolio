@@ -1,0 +1,1889 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: transparent;
+}
+
+html {
+    height  : 100%;
+    overflow: hidden;
+    position: relative;
+}
+body {
+    height  : 100%;
+    overflow: auto;
+    position: relative;
+}
+
+
+/* **********NAV/HEADER********** */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #383737;
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    }
+
+.logo {
+    color: antiquewhite;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+
+#title {
+    font-size: 10px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 38%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a:hover {
+    color: rgb(253, 243, 181);
+}
+
+.nav-links a {
+    color: antiquewhite;
+    text-decoration: none;
+    letter-spacing: 3px;
+    /* font-weight: bold; */
+    /* font-size: 14px; */
+    
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 30px;
+    height: 2px;
+    background-color: antiquewhite;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 950px) {
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: fixed;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #383737;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        /* transition: transform 0.5s ease-in; */
+        
+    }
+
+    .nav-in {
+        transition: transform 0.5s ease-in;
+    }
+
+    
+
+
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+    
+}
+
+@-webkit-keyframes hvr-bob {
+    0% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+    50% {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  @keyframes hvr-bob {
+    0% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+    50% {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  @-webkit-keyframes hvr-bob-float {
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  @keyframes hvr-bob-float {
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  .hvr-bob {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+    -webkit-animation-name: hvr-bob-float, hvr-bob;
+    animation-name: hvr-bob-float, hvr-bob;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+  }
+
+  header {
+    min-height: 100vh;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+    background: #241414; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+#mobile-header {
+    display: none;
+}
+
+#triangle1 {
+    height: 58vh;
+    position: relative;
+    top: 0;
+    left: 0;  
+}
+
+#mobile-triangle1 {
+    display: none;
+}
+
+#triangle2 {
+    height: 50vh;
+    position: absolute;
+    top: 35%;
+    left: 33.5%;    
+}
+
+#mobile-triangle2 {
+    display: none;
+}
+
+#triangle3 {
+    height: 50vh;
+    position: absolute;
+    top: 42%;
+    left: 42%;
+}
+
+#mobile-triangle3 {
+    display: none;
+}
+
+
+
+
+
+
+/* **********ABOUT SECTION********** */
+
+#about {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    color: antiquewhite;
+    font-family: 'Montserrat', sans-serif;
+    /* padding-top: 1vh; */
+    
+    
+    
+}
+
+#about-text {
+    padding-top: 4vh;
+    min-height: 92vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#383737+0,202020+100 */
+    background: #383737; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #383737 0%, #202020 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #383737 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #383737 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383737', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    min-height: 92vh;
+    font-size: 24px;
+}
+
+#about-me-header {
+    text-shadow: 0px 0px 10px #e12b2b;
+}
+
+#about-me li {
+    list-style: none;
+}
+
+#selfie {
+    /* height: 300px; */
+    height: 35vh;
+}
+
+#about-background {
+    background-color: #302f2f;
+    padding: 30px;
+}
+
+.contact-me-triangle {
+    color: none;
+}
+
+#transparent {
+    color: none;
+}
+
+.contact-me-triangle img {
+    height: 100px;
+}
+
+#about-list {
+    padding-top: 4vh;
+    
+    min-height: 92vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(43, 48, 54); */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#202020+0,2b3036+100 */
+    background: #202020; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #202020 0%, #2b3036 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #202020 0%,#2b3036 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #202020 0%,#2b3036 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#202020', endColorstr='#2b3036',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
+   }
+
+.lists {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: max(2vw, 28px);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    list-style: none;
+
+}
+
+.borders2 {
+    border-top: solid 1px antiquewhite;
+    border-bottom: solid 1px antiquewhite;
+    padding-left: 20px;
+}
+
+.borders1 {
+    border-top: solid 2px antiquewhite;
+    border-bottom: solid 2px antiquewhite;
+    border-right: solid 2px antiquewhite;
+    padding-left: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.glow-text {
+    color: antiquewhite;
+    text-shadow: 0px 0px 10px #e12b2b;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;  
+    list-style: none;
+    padding-left: 5px;
+}
+
+.glow-text:hover {
+    color: antiquewhite;
+  text-shadow:0px 0px 30px rgb(253,243,181);
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+
+
+/* **********PROJECTS********** */
+
+
+
+#projects {
+    min-height: 50vh;
+    color: antiquewhite;
+    font-family: 'Montserrat', sans-serif;
+     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+     background: #241414; /* Old browsers */
+     background: -moz-linear-gradient(45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+     background: -webkit-linear-gradient(45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+     background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    padding-top: 8vh;
+    
+}
+
+
+
+#screenshots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    min-height: 42vh;
+    width: 100%;
+}
+
+#projects-title-max {
+    list-style: none;
+    font-size: max(2vw, 28px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10px;
+    text-shadow: 0px 0px 10px #e12b2b;
+}
+
+#projects-title-min {
+    list-style: none;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    text-shadow: 0px 0px 10px #e12b2b;
+}
+
+#border-space {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.border-alignment {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.borders-left {    
+    border-top: solid 2px antiquewhite;
+    border-bottom: solid 2px antiquewhite;
+    border-left: solid 2px antiquewhite;
+    padding-left: 2vw;
+    padding-top: 200%;
+    padding-bottom: 200%;
+}
+
+.borders3 {    
+    border-top: solid 2px antiquewhite;
+    border-bottom: solid 2px antiquewhite;
+    border-right: solid 2px antiquewhite;
+    padding-left: 2vw;
+    padding-top: 50%;
+    padding-bottom: 50%;
+}
+.borders4 {    
+    border-top: solid 1px antiquewhite;
+    border-bottom: solid 1px antiquewhite;
+    padding-left: 2vw;
+}
+.borders5 {    
+    border-top: solid 2px antiquewhite;
+    border-bottom: solid 2px antiquewhite;
+    border-left: solid 2px antiquewhite;
+    padding-left: 2vw;
+    padding-top: 50%;
+    padding-bottom: 50%;
+}
+.borders6 {    
+    border-right: solid 2px antiquewhite;
+    padding-left: 2vw;
+    padding-top: 50%;
+    padding-bottom: 50%;
+}
+
+.borders7 {   
+    border-left: solid 2px antiquewhite;
+    padding-left: 2vw;
+    padding-top: 50%;
+    padding-bottom: 50%;
+}
+
+.borders-right {    
+    border-top: solid 2px antiquewhite;
+    border-bottom: solid 2px antiquewhite;
+    border-right: solid 2px antiquewhite;
+    padding-right: 2vw;
+    padding-top: 400%;
+    padding-bottom: 400%;
+}
+
+#vibrato-screenshot {
+    height: auto;
+    max-width: 40vw;
+    border: 4px solid antiquewhite;
+}
+
+#batcity-screenshot {
+    height: auto;
+    max-width: 40vw;
+    border: 4px solid antiquewhite;
+}
+
+
+
+/* **********CONTACT********** */
+
+
+
+
+
+#contact {
+    min-height: 50vh;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+    background: #241414; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    padding-top: 8vh;
+}
+
+#contact-lists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    min-height: 42vh;
+    width: 100%;
+}
+
+#contact-title-max {
+    list-style: none;
+    font-size: max(2vw, 28px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10px;
+    text-shadow: 0px 0px 10px #e12b2b;
+}
+
+.contact-borders4 {    
+    border-top: solid 1px antiquewhite;
+    border-bottom: solid 1px antiquewhite;
+    padding-left: 2vw;
+}
+
+.contact-borders-left {    
+    border-top: solid 2px antiquewhite;
+    border-bottom: solid 2px antiquewhite;
+    border-left: solid 2px antiquewhite;
+    padding-left: 2vw;
+    padding-top: 180%;
+    padding-bottom: 180%;
+}
+
+#contact-title-min {
+    list-style: none;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    text-shadow: 0px 0px 10px #e12b2b;
+}
+
+#contact-container {
+    background-color: #202020;
+    width: 60vw;
+    height: auto;
+    border: 2px solid antiquewhite;
+    text-align: center;
+    padding-bottom: 7vh;
+    
+}
+
+form {
+    margin-top: 3vh;
+    
+}
+
+.form-control {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid antiquewhite;
+    color: antiquewhite;
+    font-size: 16px;
+    padding-left: 2vh;
+}
+
+.form_label {
+    width: 50vw;
+    font-size: 16px;
+    display: inline-block;
+    text-align: left;
+}
+
+
+input {
+    height: 2rem;
+    
+}
+
+input:valid {
+    color: antiquewhite;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: antiquewhite;
+}
+
+
+
+form .submit {
+    background: #373838;
+    border-color: transparent;
+    color: antiquewhite;
+    font-size: 20px;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+    width: 40vw;
+}
+
+form .submit:hover {
+    text-shadow: 0px 0px 10px #e12b2b;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* **********MEDIA QUERIES********** */
+
+/* **********HEADER********** */
+@media screen and (max-width: 1450px) {
+    #triangle1 {
+        height: 58vh;
+        position: relative;
+        top: 0;
+        left: 0;  
+    }
+    
+    #triangle2 {
+        height: 50vh;
+        position: absolute;
+        top: 35%;
+        left: 29%;    
+    }
+    
+    #triangle3 {
+        height: 50vh;
+        position: absolute;
+        top: 42%;
+        left: 37%;
+    }
+}
+
+@media screen and (max-width: 1225px) {
+    #triangle1 {
+        height: 58vh;
+        position: relative;
+        top: 0;
+        left: 0;  
+    }
+    
+    #triangle2 {
+        height: 50vh;
+        position: absolute;
+        top: 35%;
+        left: 24.5%;    
+    }
+    
+    #triangle3 {
+        height: 50vh;
+        position: absolute;
+        top: 42%;
+        left: 34%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #triangle1 {
+        height: 58vh;
+        position: relative;
+        top: 0;
+        left: 0;  
+    }
+    
+    #triangle2 {
+        height: 50vh;
+        position: absolute;
+        top: 35%;
+        left: 20%;    
+    }
+    
+    #triangle3 {
+        height: 50vh;
+        position: absolute;
+        top: 42%;
+        left: 33%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #triangle1 {
+        height: 58vh;
+        position: relative;
+        top: 0;
+        left: 0;  
+    }
+    
+    #triangle2 {
+        height: 50vh;
+        position: absolute;
+        top: 35%;
+        left: 15%;    
+    }
+    
+    #triangle3 {
+        height: 50vh;
+        position: absolute;
+        top: 42%;
+        left: 30%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #triangle1 {
+        height: 58vh;
+        position: relative;
+        top: 0;
+        left: 0;  
+    }
+    
+    #triangle2 {
+        height: 50vh;
+        position: absolute;
+        top: 35%;
+        left: 8%;    
+    }
+    
+    #triangle3 {
+        height: 50vh;
+        position: absolute;
+        top: 42%;
+        left: 8%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #triangle1 {
+        height: 58vh;
+        position: relative;
+        top: 0;
+        left: 0;  
+    }
+    
+    #triangle2 {
+        height: 50vh;
+        position: absolute;
+        top: 35%;
+        left: 0;
+        right: 0;
+        margin: auto; 
+    }
+    
+    #triangle3 {
+        height: 50vh;
+        position: absolute;
+        top: 42%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        
+    }
+}
+
+/* **********ABOUT********** */
+@media screen and (max-width: 768px) {
+    #about-list {
+        
+        width: 100vw;
+    }
+
+    #about-text {
+        width: 100vw;
+    }
+
+    #about {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* **********PROJECTS********** */
+@media screen and (max-width: 1100px) {
+   
+    #screenshots {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        min-height: 42vh;
+        width: 100%;
+    }
+
+    #projects-title-max {
+        display: none;
+    }
+
+    .border-alignment {
+        display: none;
+    }
+
+    #border-space {
+        display: none;
+    }
+
+    .min-border-space {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+
+    .min-border-alignment {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        }
+
+    
+
+    .min-borders-top {
+        border-top: solid 2px antiquewhite;
+        border-left: solid 2px antiquewhite;
+        border-right: solid 2px antiquewhite;
+        padding-top: 2vh;
+        padding-right: 25vw;
+        padding-left: 25vw;
+        
+    }
+
+    .min-borders3 {
+        border-bottom: solid 2px antiquewhite;
+        border-left: solid 2px antiquewhite;
+        border-right: solid 2px antiquewhite;
+        padding-bottom: 2vh;
+        padding-left: 8.5vw;
+        padding-right: 8.5vw;
+    }
+
+    .min-borders4 {    
+        border-left: solid 1px antiquewhite;
+        border-right: solid 1px antiquewhite;
+        padding-bottom: 2vh;
+    }
+
+    .min-borders5 {    
+        border-top: solid 2px antiquewhite;
+        border-left: solid 2px antiquewhite;
+        border-right: solid 2px antiquewhite;
+        padding-top: 2vh;
+        padding-left: 8.5vw;
+        padding-right: 8.5vw;
+    }
+
+    .min-borders6 {
+        border-bottom: solid 2px antiquewhite;
+        padding-bottom: 2vh;
+        padding-left: 8.5vw;
+        padding-right: 8.5vw;
+    }
+
+    .min-borders7 {    
+        border-top: solid 2px antiquewhite;
+        padding-top: 2vh;
+        padding-left: 8.5vw;
+        padding-right: 8.5vw;
+    }
+
+    .min-borders-bottom {
+        border-bottom: solid 2px antiquewhite;
+        border-left: solid 2px antiquewhite;
+        border-right: solid 2px antiquewhite;
+        padding-top: 2vh;
+        padding-right: 25vw;
+        padding-left: 25vw;
+    }
+
+    
+
+    #vibrato-screenshot {
+        display: block;
+        height: auto;
+        max-width: 65vw;
+        border: 4px solid antiquewhite;
+    }
+    
+    #batcity-screenshot {
+        display: block;
+        height: auto;
+        max-width: 65vw;
+        border: 4px solid antiquewhite;
+    }
+
+
+}
+
+@media screen and (min-width: 1100px) {
+    #projects-title-min {
+        display: none;
+    }
+
+    .min-border-space {
+        display: none;
+    }
+
+    .min-border-alignment {
+        display: none;
+    }
+}
+
+
+
+
+/* **********CONTACT********** */
+
+
+@media screen and (max-width: 1100px) {
+    #contact-title-max {
+        display: none;
+    }
+
+    #contact-lists {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        min-height: 42vh;
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 1100px) {
+    #contact-title-min {
+        display: none;
+    }
+
+    .min-border-space {
+        display: none;
+    }
+
+    .min-border-alignment {
+        display: none;
+    }
+}
+
+
+/* **********DEVICES********** */
+
+/* MOTO G4 - PORTRAIT */
+@media only screen 
+    and (min-device-width: 360px)
+    and (max-device-width: 640px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+        
+
+        #triangle1 { 
+            display: none;
+        }
+
+        #mobile-triangle1 {
+            display: inline-block;
+            height: 58vh;
+            position: relative;
+            top: 0;
+            left: 0; 
+        }
+
+        #triangle2 {
+            display: none;  
+        }
+
+        #mobile-triangle2 {
+            display: inline-block;
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        
+        #triangle3 {
+            display: none;
+        }
+
+        #mobile-triangle3 {
+            display: inline-block;
+            height: 50vh;
+            position: absolute;
+            top: 42%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        #contact {
+            padding-bottom: 7vh;
+        }
+    }
+
+/* MOTO G4 - LANDSCAPE */
+@media only screen 
+    and (min-device-width: 360px)
+    and (max-device-width: 640px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+        #triangle1 {
+            display: none;
+        }
+
+        #mobile-triangle1 {
+            display: inline-block;
+            height: 58vh;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        
+        #triangle2 {
+            display: none;    
+        }
+
+        #mobile-triangle2 {
+            display: inline-block;
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 33%;
+        }
+        
+        #triangle3 {
+            display: none;
+        }
+
+        #mobile-triangle3 {
+            display: inline-block;
+            height: 50vh;
+            position: absolute;
+            top: 42%;
+            left: 43%;
+        }
+
+        #contact {
+            padding-bottom: 7vh;
+        }
+    }
+
+
+    /* PIXEL 2 - PORTRAIT */
+@media only screen 
+and (min-device-width: 411px)
+and (max-device-width: 731px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+    #triangle1 {
+        display: none; 
+    }
+
+    #mobile-triangle1 {
+        display: inline-block;
+        height: 58vh;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    #triangle2 {
+        display: none;   
+    }
+
+    #mobile-triangle2 {
+        display: inline-block;
+        height: 50vh;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    #triangle3 {
+        display: none;
+    }
+
+    #mobile-triangle3 {
+        display: inline-block;
+        height: 50vh;
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    #contact {
+        padding-bottom: 7vh;
+    }
+
+
+}
+
+  
+
+/* PIXEL 2 - LANDSCAPE */
+@media only screen 
+    and (min-device-width: 411px)
+    and (max-device-width: 731px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+        #triangle1 {
+            display: none;  
+        }
+
+        #mobile-triangle1 {
+            display: inline-block;
+            height: 58vh;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        #triangle2 {
+            display: none;
+        }
+        
+        #mobile-triangle2 {
+            display: inline-block;
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 33%;    
+        }
+
+        #triangle3 {
+            display: none;
+        }
+        
+        #mobile-triangle3 {
+            display: inline-block;
+            height: 50vh;
+            position: absolute;
+            top: 42%;
+            left: 43%;
+        }
+
+    #contact {
+        padding-bottom: 7vh;
+    }
+  }
+
+/* PIXEL 2 XL - PORTRAIT */
+@media only screen 
+    and (min-device-width: 411px)
+    and (max-device-width: 823px)
+    and (-webkit-min-device-pixel-ratio: 3.5)
+    and (orientation: portrait) {
+    #triangle1 {
+        display: none;
+    }
+
+    #mobile-triangle1 {
+        display: inline-block;
+        height: 50vh;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    #triangle2 {
+        display: none;
+    }
+    
+    #mobile-triangle2 {
+        display: inline-block;
+        height: 42vh;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%);    
+    }
+
+    #triangle3 {
+        display: none;
+    }
+    
+    #mobile-triangle3 {
+        display: inline-block;
+        height: 42vh;
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%);  
+        
+    }
+
+    #contact {
+        padding-bottom: 7vh;
+    }
+  }
+
+/* PIXEL 2 XL - LANDSCAPE */
+  @media only screen 
+    and (min-device-width: 411px)
+    and (max-device-width: 823px)
+    and (-webkit-min-device-pixel-ratio: 3.5)
+    and (orientation: landscape) {
+        #triangle1 {
+            display: none; 
+        }
+
+        #mobile-triangle1 {
+            display: inline-block;
+            height: 58vh;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        #triangle2 {
+            display: none;
+        }
+        
+        #mobile-triangle2 {
+            display: inline-block;
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 33%;    
+        }
+
+        #triangle3 {
+            display: none;
+        }
+        
+        #mobile-triangle3 {
+            display: inline-block;
+            height: 50vh;
+            position: absolute;
+            top: 42%;
+            left: 43%;
+        }
+
+    #contact {
+        padding-bottom: 7vh;
+    }
+  }
+
+  /* iPHONE 5/SE - PORTRAIT */
+  @media only screen 
+    and (min-device-width: 320px)
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+       #title {
+            font-size: 8px;
+        }
+        #triangle1 {
+            display: none; 
+        }
+
+        #mobile-triangle1 {
+            display: inline-block;
+            height: 58vh;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        #triangle2 {
+            display: none;
+        }
+        
+        #mobile-triangle2 {
+            display: inline-block;
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%);
+            
+        }
+
+        #triangle3 {
+            display: none;
+        }
+        
+        #mobile-triangle3 {
+            display: inline-block;
+            height: 50vh;
+            position: absolute;
+            top: 42%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        #contact {
+            padding-bottom: 7vh;
+        }
+    }
+
+/* iPHONE 5/SE - LANDSCAPE */
+    /* @media only screen 
+    and (min-device-width: 320px)
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+        #triangle1 {
+            height: 58vh;
+            position: relative;
+            top: 0;
+            left: 0.5%;  
+        }
+        
+        #triangle2 {
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 27%;    
+        }
+        
+        #triangle3 {
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 45%;
+        }
+    } */
+
+/* iPHONE 6/7/8 - PORTRAIT */
+    @media only screen 
+    and (min-device-width: 375px)
+    and (max-device-width: 667px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+        #triangle1 {
+            display: none;  
+        }
+
+        #mobile-triangle1 {
+            display: inline-block;
+            height: 50vh;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        #triangle2 {
+            display: none;
+        }
+        
+        #mobile-triangle2 {
+            display: inline-block;
+            height: 42vh;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%);    
+        }
+
+        #triangle3 {
+            display: none;
+        }
+        
+        #mobile-triangle3 {
+            display: inline-block;
+            height: 42vh;
+            position: absolute;
+            top: 42%;
+            left: 50%;
+            transform: translate(-50%); 
+        }
+    }
+
+
+/* iPHONE 6/7/8 - LANDSCAPE */
+    @media only screen 
+    and (min-device-width: 375px)
+    and (max-device-width: 667px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+        #triangle1 {
+            display: none;
+        }
+
+        #mobile-triangle1 {
+            display: inline-block;
+            height: 58vh;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        #triangle2 {
+            display: none;
+        }
+        
+        #mobile-triangle2 {
+            display: inline-block;
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 33%;    
+        }
+
+        #triangle3 {
+            display: none;
+        }
+        
+        #mobile-triangle3 {
+            display: inline-block;
+            height: 50vh;
+            position: absolute;
+            top: 42%;
+            left: 43%;
+        }
+    }
+
+/* iPHONE 6/7/8 PLUS - PORTRAIT */
+    @media only screen 
+    and (min-device-width: 414px)
+    and (max-device-width: 736px)
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: portrait) {
+        #triangle1 {
+            display: none; 
+        }
+
+        #mobile-triangle1 {
+            display: inline-block;
+            height: 50vh;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        #triangle2 {
+            display: none;
+        }
+        
+        #mobile-triangle2 {
+            display: inline-block;
+            height: 42vh;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%);    
+        }
+
+        #triangle3 {
+            display: none;
+        }
+        
+        #mobile-triangle3 {
+            display: inline-block;
+            height: 42vh;
+            position: absolute;
+            top: 42%;
+            left: 50%;
+            transform: translate(-50%); 
+        }
+
+        #contact {
+            padding-bottom: 7vh;
+        }
+    }
+
+/* iPHONE 6/7/8 PLUS - LANDSCAPE */
+    @media only screen 
+    and (min-device-width: 414px)
+    and (max-device-width: 736px)
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: landscape) {
+        #triangle1 {
+            display: none;  
+        }
+
+        #mobile-triangle1 {
+            display: inline-block;
+            height: 58vh;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        #triangle2 {
+            display: none;
+        }
+        
+        #mobile-triangle2 {
+            display: inline-block;
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 33%;    
+        }
+
+        #triangle3 {
+            display: none;
+        }
+        
+        #mobile-triangle3 {
+            display: inline-block;
+            height: 50vh;
+            position: absolute;
+            top: 42%;
+            left: 43%;
+        }
+
+        #contact {
+            padding-bottom: 7vh;
+        }
+    }
+
+/* iPHONE X - PORTRAIT */
+    @media only screen 
+    and (min-device-width: 375px)
+    and (max-device-width: 812px)
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: portrait) {
+        #triangle1 {
+            display: none; 
+        }
+
+        #mobile-triangle1 {
+            display: inline-block;
+            height: 48vh;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        #triangle2 {
+            display: none;
+        }
+        
+        #mobile-triangle2 {
+            display: inline-block;
+            height: 40vh;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%); 
+        }
+
+        #triangle3 {
+            display: none;
+        }
+        
+        #mobile-triangle3 {
+            display: inline-block;
+            height: 40vh;
+            position: absolute;
+            top: 42%;
+            left: 50%;
+            transform: translate(-50%); 
+        }
+
+        #contact {
+            padding-bottom: 7vh;
+        }
+    }
+
+/* iPHONE X - LANDSCAPE */
+    @media only screen 
+    and (min-device-width: 375px)
+    and (max-device-width: 812px)
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: landscape)  {
+        #triangle1 {
+            display: none;
+        }
+
+        #mobile-triangle1 {
+            display: inline-block;
+            height: 58vh;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        #triangle2 {
+            display: none;
+        }
+        
+        #mobile-triangle2 {
+            display: inline-block;
+            height: 50vh;
+            position: absolute;
+            top: 35%;
+            left: 33%;    
+        }
+
+        #triangle3 {
+            display: none;
+        }
+        
+        #mobile-triangle3 {
+            display: inline-block;
+            height: 50vh;
+            position: absolute;
+            top: 42%;
+            left: 43%;
+        }
+
+        #contact {
+            padding-bottom: 7vh;
+        }
+    }
+
+    /* iPAD  */
+    @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #triangle1 {
+        height: 58vh;
+        position: relative;
+        top: 0;
+        left: 0;  
+    }
+    
+    #triangle2 {
+        height: 50vh;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%);
+        }
+    
+    #triangle3 {
+        height: 50vh;
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%);
+        }
+    
+    #contact {
+        padding-bottom: 7vh;
+    }   
+}
+
+    /* iPad Landscape */
+
+    @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    #contact {
+        padding-bottom: 7vh;
+    } 
+}
+
+
+    /* iPAD PRO 12.9" */
+    @media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #triangle1 {
+        height: 58vh;
+        position: relative;
+        top: 0;
+        left: 0;  
+    }
+    
+    #triangle2 {
+        height: 50vh;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%);
+        }
+    
+    #triangle3 {
+        height: 50vh;
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%);
+        }
+
+    #contact {
+        padding-bottom: 7vh;
+    }       
+}
+
+    /* iPad Pro 12.9 Landscape */
+
+    @media only screen 
+  and (min-device-width: 1366px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #contact {
+        padding-bottom: 7vh;
+    }
+}
+
+/* **********XR********** */
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (orientation:portrait)
+    and (-webkit-device-pixel-ratio : 2) {
+        
+        header {
+            display: none;
+        }
+
+        #mobile-header {
+            min-height: 100vh;
+            width: 100vw;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+            background: #241414; /* Old browsers */
+            background: -moz-linear-gradient(45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: translate3d(0,0,0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-y: hidden;
+        } 
+
+        #triangle1 {
+            display: none; 
+        }
+
+        #mobile-triangle1 {
+            display: inline-block;
+            height: 48vh;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        #triangle2 {
+            display: none;
+        }
+        
+        #mobile-triangle2 {
+            display: inline-block;
+            height: 40vh;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%); 
+        }
+
+        #triangle3 {
+            display: none;
+        }
+        
+        #mobile-triangle3 {
+            display: inline-block;
+            height: 40vh;
+            position: absolute;
+            top: 42%;
+            left: 50%;
+            transform: translate(-50%); 
+        }
+
+        #about {
+            margin-top: 100vh;
+        }
+     }
+
+     @media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (orientation: landscape)
+    and (-webkit-device-pixel-ratio : 2) {
+        header {
+            display: none;
+        }
+
+        #mobile-header {
+            min-height: 100vh;
+            width: 100vw;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+            background: #241414; /* Old browsers */
+            background: -moz-linear-gradient(45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: translate3d(0,0,0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-y: hidden;
+        }
+        
+        #about {
+            margin-top: 100vh;
+        }
+    }

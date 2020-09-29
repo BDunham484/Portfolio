@@ -8,16 +8,8 @@
     background-color: transparent;
 }
 
-html {
-    height  : 100%;
-    overflow: hidden;
-    position: relative;
-}
-body {
-    height  : 100%;
-    overflow: auto;
-    position: relative;
-}
+
+
 
 
 /* **********NAV/HEADER********** */
@@ -249,19 +241,11 @@ nav {
     left: 0;  
 }
 
-#mobile-triangle1 {
-    display: none;
-}
-
 #triangle2 {
     height: 50vh;
     position: absolute;
     top: 35%;
     left: 33.5%;    
-}
-
-#mobile-triangle2 {
-    display: none;
 }
 
 #triangle3 {
@@ -271,9 +255,6 @@ nav {
     left: 42%;
 }
 
-#mobile-triangle3 {
-    display: none;
-}
 
 
 
@@ -1027,6 +1008,14 @@ form .submit:hover {
 }
 
 
+
+
+
+
+
+
+
+
 /* **********DEVICES********** */
 
 /* MOTO G4 - PORTRAIT */
@@ -1036,21 +1025,36 @@ form .submit:hover {
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: portrait) {
         
-
-        #triangle1 { 
+        #header {
             display: none;
         }
 
+        #mobile-header {
+            min-height: 100vh;
+            width: 100vw;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+            background: #241414; /* Old browsers */
+            background: -moz-linear-gradient(45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: translate3d(0,0,0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-y: hidden;
+        } 
+        
         #mobile-triangle1 {
             display: inline-block;
             height: 58vh;
             position: relative;
             top: 0;
             left: 0; 
-        }
-
-        #triangle2 {
-            display: none;  
         }
 
         #mobile-triangle2 {
@@ -1061,10 +1065,6 @@ form .submit:hover {
             left: 50%;
             transform: translate(-50%);
         }
-        
-        #triangle3 {
-            display: none;
-        }
 
         #mobile-triangle3 {
             display: inline-block;
@@ -1074,6 +1074,8 @@ form .submit:hover {
             left: 50%;
             transform: translate(-50%);
         }
+
+        
 
         #contact {
             padding-bottom: 7vh;
