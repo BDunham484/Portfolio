@@ -1088,20 +1088,32 @@ form .submit:hover {
     and (max-device-width: 640px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: landscape) {
-        #triangle1 {
-            display: none;
+        #mobile-header {
+            min-height: 100vh;
+            width: 100vw;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+            background: #241414; /* Old browsers */
+            background: -moz-linear-gradient(45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: translate3d(0,0,0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-y: hidden;
         }
 
-        #mobile-triangle1 {
+       #mobile-triangle1 {
             display: inline-block;
             height: 58vh;
             position: relative;
             top: 0;
             left: 0;
-        }
-        
-        #triangle2 {
-            display: none;    
         }
 
         #mobile-triangle2 {
@@ -1110,10 +1122,6 @@ form .submit:hover {
             position: absolute;
             top: 35%;
             left: 33%;
-        }
-        
-        #triangle3 {
-            display: none;
         }
 
         #mobile-triangle3 {
@@ -1136,9 +1144,29 @@ and (min-device-width: 411px)
 and (max-device-width: 731px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) {
-    #triangle1 {
-        display: none; 
+    header {
+        display: none;
     }
+
+    #mobile-header {
+        min-height: 100vh;
+        width: 100vw;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+        background: #241414; /* Old browsers */
+        background: -moz-linear-gradient(45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transform: translate3d(0,0,0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-y: hidden;
+    } 
 
     #mobile-triangle1 {
         display: inline-block;
@@ -1148,10 +1176,6 @@ and (orientation: portrait) {
         left: 0;
     }
 
-    #triangle2 {
-        display: none;   
-    }
-
     #mobile-triangle2 {
         display: inline-block;
         height: 50vh;
@@ -1159,10 +1183,6 @@ and (orientation: portrait) {
         top: 35%;
         left: 50%;
         transform: translate(-50%);
-    }
-
-    #triangle3 {
-        display: none;
     }
 
     #mobile-triangle3 {
@@ -1178,7 +1198,9 @@ and (orientation: portrait) {
         padding-bottom: 7vh;
     }
 
-
+    #about {
+        margin-top: 100vh;
+    }
 }
 
   
@@ -1189,8 +1211,28 @@ and (orientation: portrait) {
     and (max-device-width: 731px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: landscape) {
-        #triangle1 {
-            display: none;  
+        header {
+            display: none;
+        }
+
+        #mobile-header {
+            min-height: 100vh;
+            width: 100vw;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+            background: #241414; /* Old browsers */
+            background: -moz-linear-gradient(45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: translate3d(0,0,0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-y: hidden;
         }
 
         #mobile-triangle1 {
@@ -1200,10 +1242,6 @@ and (orientation: portrait) {
             top: 0;
             left: 0;
         }
-
-        #triangle2 {
-            display: none;
-        }
         
         #mobile-triangle2 {
             display: inline-block;
@@ -1211,10 +1249,6 @@ and (orientation: portrait) {
             position: absolute;
             top: 35%;
             left: 33%;    
-        }
-
-        #triangle3 {
-            display: none;
         }
         
         #mobile-triangle3 {
@@ -1228,6 +1262,10 @@ and (orientation: portrait) {
     #contact {
         padding-bottom: 7vh;
     }
+
+    #about {
+        margin-top: 100vh;
+    }
   }
 
 /* PIXEL 2 XL - PORTRAIT */
@@ -1236,8 +1274,28 @@ and (orientation: portrait) {
     and (max-device-width: 823px)
     and (-webkit-min-device-pixel-ratio: 3.5)
     and (orientation: portrait) {
-    #triangle1 {
+    header {
         display: none;
+    }
+
+    #mobile-header {
+        min-height: 100vh;
+        width: 100vw;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+        background: #241414; /* Old browsers */
+        background: -moz-linear-gradient(45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transform: translate3d(0,0,0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-y: hidden;
     }
 
     #mobile-triangle1 {
@@ -1246,10 +1304,6 @@ and (orientation: portrait) {
         position: relative;
         top: 0;
         left: 0;
-    }
-
-    #triangle2 {
-        display: none;
     }
     
     #mobile-triangle2 {
@@ -1260,10 +1314,6 @@ and (orientation: portrait) {
         left: 50%;
         transform: translate(-50%);    
     }
-
-    #triangle3 {
-        display: none;
-    }
     
     #mobile-triangle3 {
         display: inline-block;
@@ -1272,11 +1322,14 @@ and (orientation: portrait) {
         top: 42%;
         left: 50%;
         transform: translate(-50%);  
-        
     }
 
     #contact {
         padding-bottom: 7vh;
+    }
+
+    #about {
+        margin-top: 100vh;
     }
   }
 
@@ -1286,8 +1339,28 @@ and (orientation: portrait) {
     and (max-device-width: 823px)
     and (-webkit-min-device-pixel-ratio: 3.5)
     and (orientation: landscape) {
-        #triangle1 {
-            display: none; 
+        header {
+            display: none;
+        }
+
+        #mobile-header {
+            min-height: 100vh;
+            width: 100vw;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+            background: #241414; /* Old browsers */
+            background: -moz-linear-gradient(45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: translate3d(0,0,0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-y: hidden;
         }
 
         #mobile-triangle1 {
@@ -1297,10 +1370,6 @@ and (orientation: portrait) {
             top: 0;
             left: 0;
         }
-
-        #triangle2 {
-            display: none;
-        }
         
         #mobile-triangle2 {
             display: inline-block;
@@ -1308,10 +1377,6 @@ and (orientation: portrait) {
             position: absolute;
             top: 35%;
             left: 33%;    
-        }
-
-        #triangle3 {
-            display: none;
         }
         
         #mobile-triangle3 {
@@ -1324,6 +1389,10 @@ and (orientation: portrait) {
 
     #contact {
         padding-bottom: 7vh;
+    }
+
+    #about {
+        margin-top: 100vh;
     }
   }
 
@@ -1336,8 +1405,29 @@ and (orientation: portrait) {
        #title {
             font-size: 8px;
         }
-        #triangle1 {
-            display: none; 
+        
+        header {
+            display: none;
+        }
+
+        #mobile-header {
+            min-height: 100vh;
+            width: 100vw;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+            background: #241414; /* Old browsers */
+            background: -moz-linear-gradient(45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: translate3d(0,0,0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-y: hidden;
         }
 
         #mobile-triangle1 {
@@ -1347,10 +1437,6 @@ and (orientation: portrait) {
             top: 0;
             left: 0;
         }
-
-        #triangle2 {
-            display: none;
-        }
         
         #mobile-triangle2 {
             display: inline-block;
@@ -1359,11 +1445,6 @@ and (orientation: portrait) {
             top: 35%;
             left: 50%;
             transform: translate(-50%);
-            
-        }
-
-        #triangle3 {
-            display: none;
         }
         
         #mobile-triangle3 {
@@ -1375,8 +1456,8 @@ and (orientation: portrait) {
             transform: translate(-50%);
         }
 
-        #contact {
-            padding-bottom: 7vh;
+        #about {
+            margin-top: 100vh;
         }
     }
 
@@ -1414,8 +1495,28 @@ and (orientation: portrait) {
     and (max-device-width: 667px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: portrait) {
-        #triangle1 {
-            display: none;  
+        header {
+            display: none;
+        }
+
+        #mobile-header {
+            min-height: 100vh;
+            width: 100vw;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+            background: #241414; /* Old browsers */
+            background: -moz-linear-gradient(45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: translate3d(0,0,0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-y: hidden;
         }
 
         #mobile-triangle1 {
@@ -1424,10 +1525,6 @@ and (orientation: portrait) {
             position: relative;
             top: 0;
             left: 0;
-        }
-
-        #triangle2 {
-            display: none;
         }
         
         #mobile-triangle2 {
@@ -1438,10 +1535,6 @@ and (orientation: portrait) {
             left: 50%;
             transform: translate(-50%);    
         }
-
-        #triangle3 {
-            display: none;
-        }
         
         #mobile-triangle3 {
             display: inline-block;
@@ -1450,6 +1543,10 @@ and (orientation: portrait) {
             top: 42%;
             left: 50%;
             transform: translate(-50%); 
+        }
+
+        #about {
+            margin-top: 100vh;
         }
     }
 
@@ -1460,8 +1557,28 @@ and (orientation: portrait) {
     and (max-device-width: 667px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: landscape) {
-        #triangle1 {
+        header {
             display: none;
+        }
+
+        #mobile-header {
+            min-height: 100vh;
+            width: 100vw;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+            background: #241414; /* Old browsers */
+            background: -moz-linear-gradient(45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: translate3d(0,0,0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-y: hidden;
         }
 
         #mobile-triangle1 {
@@ -1471,10 +1588,6 @@ and (orientation: portrait) {
             top: 0;
             left: 0;
         }
-
-        #triangle2 {
-            display: none;
-        }
         
         #mobile-triangle2 {
             display: inline-block;
@@ -1482,10 +1595,6 @@ and (orientation: portrait) {
             position: absolute;
             top: 35%;
             left: 33%;    
-        }
-
-        #triangle3 {
-            display: none;
         }
         
         #mobile-triangle3 {
@@ -1495,6 +1604,10 @@ and (orientation: portrait) {
             top: 42%;
             left: 43%;
         }
+
+        #about {
+            margin-top: 100vh;
+        }
     }
 
 /* iPHONE 6/7/8 PLUS - PORTRAIT */
@@ -1503,8 +1616,28 @@ and (orientation: portrait) {
     and (max-device-width: 736px)
     and (-webkit-min-device-pixel-ratio: 3)
     and (orientation: portrait) {
-        #triangle1 {
-            display: none; 
+        header {
+            display: none;
+        }
+
+        #mobile-header {
+            min-height: 100vh;
+            width: 100vw;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+            background: #241414; /* Old browsers */
+            background: -moz-linear-gradient(45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: translate3d(0,0,0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-y: hidden;
         }
 
         #mobile-triangle1 {
@@ -1513,10 +1646,6 @@ and (orientation: portrait) {
             position: relative;
             top: 0;
             left: 0;
-        }
-
-        #triangle2 {
-            display: none;
         }
         
         #mobile-triangle2 {
@@ -1527,10 +1656,6 @@ and (orientation: portrait) {
             left: 50%;
             transform: translate(-50%);    
         }
-
-        #triangle3 {
-            display: none;
-        }
         
         #mobile-triangle3 {
             display: inline-block;
@@ -1539,6 +1664,10 @@ and (orientation: portrait) {
             top: 42%;
             left: 50%;
             transform: translate(-50%); 
+        }
+
+        #about {
+            margin-top: 100vh;
         }
 
         #contact {
@@ -1552,8 +1681,28 @@ and (orientation: portrait) {
     and (max-device-width: 736px)
     and (-webkit-min-device-pixel-ratio: 3)
     and (orientation: landscape) {
-        #triangle1 {
-            display: none;  
+        header {
+            display: none;
+        }
+
+        #mobile-header {
+            min-height: 100vh;
+            width: 100vw;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+            background: #241414; /* Old browsers */
+            background: -moz-linear-gradient(45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: translate3d(0,0,0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-y: hidden;
         }
 
         #mobile-triangle1 {
@@ -1563,10 +1712,6 @@ and (orientation: portrait) {
             top: 0;
             left: 0;
         }
-
-        #triangle2 {
-            display: none;
-        }
         
         #mobile-triangle2 {
             display: inline-block;
@@ -1575,10 +1720,6 @@ and (orientation: portrait) {
             top: 35%;
             left: 33%;    
         }
-
-        #triangle3 {
-            display: none;
-        }
         
         #mobile-triangle3 {
             display: inline-block;
@@ -1586,6 +1727,10 @@ and (orientation: portrait) {
             position: absolute;
             top: 42%;
             left: 43%;
+        }
+
+        #about {
+            margin-top: 100vh;
         }
 
         #contact {
@@ -1599,8 +1744,28 @@ and (orientation: portrait) {
     and (max-device-width: 812px)
     and (-webkit-min-device-pixel-ratio: 3)
     and (orientation: portrait) {
-        #triangle1 {
-            display: none; 
+        header {
+            display: none;
+        }
+
+        #mobile-header {
+            min-height: 100vh;
+            width: 100vw;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+            background: #241414; /* Old browsers */
+            background: -moz-linear-gradient(45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: translate3d(0,0,0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-y: hidden;
         }
 
         #mobile-triangle1 {
@@ -1609,10 +1774,6 @@ and (orientation: portrait) {
             position: relative;
             top: 0;
             left: 0;
-        }
-
-        #triangle2 {
-            display: none;
         }
         
         #mobile-triangle2 {
@@ -1623,10 +1784,6 @@ and (orientation: portrait) {
             left: 50%;
             transform: translate(-50%); 
         }
-
-        #triangle3 {
-            display: none;
-        }
         
         #mobile-triangle3 {
             display: inline-block;
@@ -1635,6 +1792,10 @@ and (orientation: portrait) {
             top: 42%;
             left: 50%;
             transform: translate(-50%); 
+        }
+
+        #about{
+            margin-top: 100vh;
         }
 
         #contact {
@@ -1648,8 +1809,28 @@ and (orientation: portrait) {
     and (max-device-width: 812px)
     and (-webkit-min-device-pixel-ratio: 3)
     and (orientation: landscape)  {
-        #triangle1 {
+        header {
             display: none;
+        }
+
+        #mobile-header {
+            min-height: 100vh;
+            width: 100vw;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+            background: #241414; /* Old browsers */
+            background: -moz-linear-gradient(45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: translate3d(0,0,0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-y: hidden;
         }
 
         #mobile-triangle1 {
@@ -1659,10 +1840,6 @@ and (orientation: portrait) {
             top: 0;
             left: 0;
         }
-
-        #triangle2 {
-            display: none;
-        }
         
         #mobile-triangle2 {
             display: inline-block;
@@ -1671,10 +1848,6 @@ and (orientation: portrait) {
             top: 35%;
             left: 33%;    
         }
-
-        #triangle3 {
-            display: none;
-        }
         
         #mobile-triangle3 {
             display: inline-block;
@@ -1682,6 +1855,10 @@ and (orientation: portrait) {
             position: absolute;
             top: 42%;
             left: 43%;
+        }
+
+        #about {
+            margin-top: 100vh;
         }
 
         #contact {
@@ -1695,33 +1872,64 @@ and (orientation: portrait) {
   and (max-device-width: 1024px) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 2) {
-    #triangle1 {
-        height: 58vh;
-        position: relative;
-        top: 0;
-        left: 0;  
+    header {
+        display: none;
     }
-    
-    #triangle2 {
-        height: 50vh;
-        position: absolute;
-        top: 35%;
-        left: 50%;
-        transform: translate(-50%);
-        }
-    
-    #triangle3 {
-        height: 50vh;
-        position: absolute;
-        top: 42%;
-        left: 50%;
-        transform: translate(-50%);
-        }
-    
-    #contact {
-        padding-bottom: 7vh;
-    }   
+
+    #mobile-header {
+      min-height: 100vh;
+      width: 100vw;
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+      background: #241414; /* Old browsers */
+      background: -moz-linear-gradient(45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transform: translate3d(0,0,0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow-y: hidden;
+  } 
+
+  #mobile-triangle1 {
+      height: 58vh;
+      position: relative;
+      top: 0;
+      left: 0;  
+  }
+  
+  #mobile-triangle2 {
+      display: inline-block;
+      height: 40vh;
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%); 
+      }
+  
+  #mobile-triangle3 {
+      display: inline-block;
+      height: 40vh;
+      position: absolute;
+      top: 42%;
+      left: 50%;
+      transform: translate(-50%); 
+      }
+
+      #about {
+          margin-top: 100vh;
+      }
+
+  #contact {
+      padding-bottom: 7vh;
+  }       
 }
+
 
     /* iPad Landscape */
 
@@ -1730,9 +1938,62 @@ and (orientation: portrait) {
   and (max-device-width: 1024px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 1) {
-    #contact {
-        padding-bottom: 7vh;
-    } 
+    header {
+        display: none;
+    }
+
+    #mobile-header {
+      min-height: 100vh;
+      width: 100vw;
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+      background: #241414; /* Old browsers */
+      background: -moz-linear-gradient(45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transform: translate3d(0,0,0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow-y: hidden;
+  } 
+
+  #mobile-triangle1 {
+      display: inline-block;
+      height: 58vh;
+      position: relative;
+      top: 0;
+      left: 0;
+  }
+  
+  #mobile-triangle2 {
+      display: inline-block;
+      height: 50vh;
+      position: absolute;
+      top: 35%;
+      left: 33%;    
+  }
+  
+  #mobile-triangle3 {
+      display: inline-block;
+      height: 50vh;
+      position: absolute;
+      top: 42%;
+      left: 43%;
+  }
+
+
+  #about {
+      margin-top: 100vh;
+  }
+
+  #contact {
+      padding-bottom: 7vh;
+  }
 }
 
 
@@ -1742,27 +2003,57 @@ and (orientation: portrait) {
   and (max-device-width: 1024px) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 2) {
-    #triangle1 {
+      header {
+          display: none;
+      }
+
+      #mobile-header {
+        min-height: 100vh;
+        width: 100vw;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+        background: #241414; /* Old browsers */
+        background: -moz-linear-gradient(45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transform: translate3d(0,0,0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-y: hidden;
+    } 
+
+    #mobile-triangle1 {
         height: 58vh;
         position: relative;
         top: 0;
         left: 0;  
     }
     
-    #triangle2 {
-        height: 50vh;
+    #mobile-triangle2 {
+        display: inline-block;
+        height: 40vh;
         position: absolute;
         top: 35%;
         left: 50%;
-        transform: translate(-50%);
+        transform: translate(-50%); 
         }
     
-    #triangle3 {
-        height: 50vh;
+    #mobile-triangle3 {
+        display: inline-block;
+        height: 40vh;
         position: absolute;
         top: 42%;
         left: 50%;
-        transform: translate(-50%);
+        transform: translate(-50%); 
+        }
+
+        #about {
+            margin-top: 100vh;
         }
 
     #contact {
@@ -1777,6 +2068,59 @@ and (orientation: portrait) {
   and (max-device-width: 1366px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 2) {
+      header {
+          display: none;
+      }
+
+      #mobile-header {
+        min-height: 100vh;
+        width: 100vw;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
+        background: #241414; /* Old browsers */
+        background: -moz-linear-gradient(45deg, #241414 0%, #202020 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, #241414 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transform: translate3d(0,0,0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-y: hidden;
+    } 
+
+    #mobile-triangle1 {
+        display: inline-block;
+        height: 58vh;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    
+    #mobile-triangle2 {
+        display: inline-block;
+        height: 50vh;
+        position: absolute;
+        top: 35%;
+        left: 33%;    
+    }
+    
+    #mobile-triangle3 {
+        display: inline-block;
+        height: 50vh;
+        position: absolute;
+        top: 42%;
+        left: 43%;
+    }
+
+
+    #about {
+        margin-top: 100vh;
+    }
+
     #contact {
         padding-bottom: 7vh;
     }
@@ -1811,10 +2155,6 @@ and (orientation: portrait) {
             align-items: center;
             justify-content: center;
             overflow-y: hidden;
-        } 
-
-        #triangle1 {
-            display: none; 
         }
 
         #mobile-triangle1 {
@@ -1824,10 +2164,6 @@ and (orientation: portrait) {
             top: 0;
             left: 0;
         }
-
-        #triangle2 {
-            display: none;
-        }
         
         #mobile-triangle2 {
             display: inline-block;
@@ -1836,10 +2172,6 @@ and (orientation: portrait) {
             top: 35%;
             left: 50%;
             transform: translate(-50%); 
-        }
-
-        #triangle3 {
-            display: none;
         }
         
         #mobile-triangle3 {
