@@ -478,8 +478,8 @@ nav {
     border-bottom: solid 2px antiquewhite;
     border-right: solid 2px antiquewhite;
     padding-left: 2vw;
-    padding-top: 50%;
-    padding-bottom: 50%;
+    padding-top: 45%;
+    padding-bottom: 45%;
 }
 .borders4 {    
     border-top: solid 1px antiquewhite;
@@ -491,21 +491,21 @@ nav {
     border-bottom: solid 2px antiquewhite;
     border-left: solid 2px antiquewhite;
     padding-left: 2vw;
-    padding-top: 50%;
-    padding-bottom: 50%;
+    padding-top: 45%;
+    padding-bottom: 45%;
 }
 .borders6 {    
     border-right: solid 2px antiquewhite;
     padding-left: 2vw;
-    padding-top: 50%;
-    padding-bottom: 50%;
+    padding-top: 45%;
+    padding-bottom: 45%;
 }
 
 .borders7 {   
     border-left: solid 2px antiquewhite;
     padding-left: 2vw;
-    padding-top: 50%;
-    padding-bottom: 50%;
+    padding-top: 45%;
+    padding-bottom: 45%;
 }
 
 .borders-right {    
@@ -515,6 +515,48 @@ nav {
     padding-right: 2vw;
     padding-top: 400%;
     padding-bottom: 400%;
+}
+
+#lower-screenshot {
+    min-height: 42vh;
+    
+}
+
+#bottom-borders {
+    list-style-type: none;
+    margin-top: -30px;
+}
+
+#bottom-borders1 {
+    border-left: solid 2px antiquewhite;
+    border-bottom: solid 2px antiquewhite;
+    border-right: solid 2px antiquewhite;
+    padding-top: 8vh;
+    margin-left: 25vw;
+    margin-right: 20vw;
+    margin-top: -50px;
+}
+
+#bottom-borders2 {
+    border-left: solid 2px antiquewhite;
+    padding-top: 4vh;
+    margin-left: 51.65vw;
+}
+
+#centered-screenshot {
+    display: flex;
+    justify-content: center;
+}
+
+#orbit-watches-screenshot {
+    height: auto;
+    max-width: 40vw;
+    border: 4px solid antiquewhite;
+    margin-left: 4vw;
+}
+
+#orbit-watches-screenshot-min {
+    display: none;
 }
 
 #vibrato-screenshot {
@@ -528,6 +570,7 @@ nav {
     max-width: 40vw;
     border: 4px solid antiquewhite;
 }
+
 
 
 
@@ -842,6 +885,27 @@ form .submit:hover {
 
 
 /* **********PROJECTS********** */
+@media screen and (max-width: 1500px) {
+    
+    #bottom-borders1 {
+        margin-top: -70px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    
+    #bottom-borders1 {
+        margin-top: -85px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    
+    #bottom-borders1 {
+        margin-top: -100px;
+    }
+}
+
 @media screen and (max-width: 1100px) {
    
     #screenshots {
@@ -851,6 +915,10 @@ form .submit:hover {
         list-style: none;
         min-height: 42vh;
         width: 100%;
+    }
+
+    #lower-screenshot {
+        display: none;
     }
 
     #projects-title-max {
@@ -948,6 +1016,13 @@ form .submit:hover {
     }
     
     #batcity-screenshot {
+        display: block;
+        height: auto;
+        max-width: 65vw;
+        border: 4px solid antiquewhite;
+    }
+
+    #orbit-watches-screenshot-min {
         display: block;
         height: auto;
         max-width: 65vw;
