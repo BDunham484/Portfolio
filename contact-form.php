@@ -8,8 +8,13 @@
     $email_subject = "Web Dev Inquiry";
 
     $email_body = "User Name: $name.\n".
-                    "User Email: $visitor_email.\n".
-                        "User Message: $message.\n";
+                    "User Email: $visitor_email.\n".                      
+                        "User Website: $website.\n". 
+                        "Start Date: $start.\n". 
+                        "End Date: $end.\n". 
+                        "Budget: $budget.\n". 
+                        "Services Needed: $services.\n". 
+                        "User Message: $message.\n"; 
     
 
      $to = "bdunham484@gmail.com";
