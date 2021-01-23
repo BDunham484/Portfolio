@@ -24,6 +24,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
     }
 
 .logo {
@@ -559,7 +560,7 @@ nav {
     display: none;
 }
 
-#vibrato-screenshot {
+#runapp-screenshot {
     height: auto;
     max-width: 40vw;
     border: 4px solid antiquewhite;
@@ -571,7 +572,60 @@ nav {
     border: 4px solid antiquewhite;
 }
 
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 
+  .example {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+  .content {
+    opacity: 0;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: antiquewhite;
+    background-color: #4c4b4b99;
+    height: 99%;
+    width: 100%;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    text-align: center;
+  }
+  .example .content:hover {
+    opacity: 1;
+  }
+  .example .content .text {
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+  }
+  .example .content:hover .text {
+    opacity: 1;
+    transform: translateY(250px);
+    -webkit-transform: translateY(250px);
+  }
 
 
 /* **********CONTACT********** */
@@ -648,8 +702,24 @@ nav {
     height: auto;
     border: 2px solid antiquewhite;
     text-align: center;
-    padding-bottom: 7vh;
-    
+    padding-bottom: 4vh;
+    padding-top: 4vh;  
+}
+
+#looking_forward {
+    font-size: 30px;
+}
+
+#response_time {
+    font-size: 14px;
+}
+
+#contact-form-max {
+    display: inline;
+}
+
+#contact-form-min {
+    display: none;
 }
 
 form {
@@ -659,26 +729,56 @@ form {
 
 .form-control {
     width: 100%;
-    background: transparent;
+    background: #4c4b4b;
     border: none;
     outline: none;
     border-bottom: 1px solid antiquewhite;
-    color: antiquewhite;
+    color: grey;
     font-size: 16px;
     padding-left: 2vh;
+    border-radius: 15px 15px 15px 15px; 
 }
 
-.form_label {
+::placeholder {
+    color: grey;
+    
+}
+
+.form_label_max {
     width: 15vw;
     font-size: 16px;
     display: inline-block;
     text-align: left;
+    padding-top: 2vh;
 }
 
-#timeline {
-    width: 15vw;
-    display: inline;
-    
+#services_label {
+    width: 30vw;
+    font-size: 16px;
+    display: inline-block;
+    text-align: left;
+    padding-top: 2vh;
+}
+
+#message_label {
+    width: 46vw;
+    font-size: 16px;
+    display: inline-block;
+    text-align: left;
+    padding-top: 2vh;
+}
+
+#message {
+    width: 100%;
+    background: #4c4b4b;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid antiquewhite;
+    color: #d0cfcf;
+    font-size: 16px;
+    padding-left: 2vh;
+    height: 20vh;
+    border-radius: 15px 15px 15px 15px;
 }
 
 
@@ -688,7 +788,7 @@ input {
 }
 
 input:valid {
-    color: antiquewhite;
+    color: #d0cfcf;
 }
 
 input:-webkit-autofill,
@@ -696,7 +796,7 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: antiquewhite;
+    -webkit-text-fill-color: #d0cfcf;
 }
 
 
@@ -1071,6 +1171,14 @@ form .submit:hover {
         min-height: 42vh;
         width: 100%;
     }
+
+    #looking_forward {
+        display: none;
+    }
+
+    #response_time {
+        display: none;
+    }
 }
 
 
@@ -1088,8 +1196,36 @@ form .submit:hover {
     }
 }
 
+@media screen and (max-width: 900px) {
+    #contact-form-max {
+        display: none;
+    }
+    
+    #contact-form-min {
+        display: inline;
+    }
 
+    .form_label_min {
+            width: 30vw;
+            font-size: 16px;
+            display: inline-block;
+            text-align: left;
+    }
 
+@media screen and (max-width: 600px) {
+    .form_label_min {
+        width: 46vw;
+        
+    }
+
+    #services_label {
+        width: 46vw;
+    }
+
+    #contact-container {
+        width: 80vw;
+    }
+}
 
 
 

@@ -1,6 +1,11 @@
 <?php
     $name = $_POST["name"];
     $visitor_email = $_POST["email"];
+    $visitor_website = $_POST["website"];
+    $start_date = $_POST["start"];
+    $end_date = $_POST["end"];
+    $budget = $_POST["budget"];
+    $services_needed = $_POST["services"];
     $message = $_POST["message"];
 
     $email_from = "bdunham484@gmail.com";
@@ -9,11 +14,11 @@
 
     $email_body = "User Name: $name.\n".
                     "User Email: $visitor_email.\n".                      
-                        "User Website: $website.\n". 
-                        "Start Date: $start.\n". 
-                        "End Date: $end.\n". 
+                        "User Website: $visitor_website.\n". 
+                        "Start Date: $start_date.\n". 
+                        "End Date: $end_date.\n". 
                         "Budget: $budget.\n". 
-                        "Services Needed: $services.\n". 
+                        "Services Needed: $services_needed.\n". 
                         "User Message: $message.\n"; 
     
 

@@ -157,10 +157,16 @@
             </li>
 
             <li>
-                <a href="./Landing-Page-1/home.html">
-                    <img id="vibrato-screenshot" src="./images/runapp-screenshot.webp"
+
+                <a class="example hvr-grow" href="./Landing-Page-1/home.html">
+                    <img id="runapp-screenshot" class="" src="./images/runapp-screenshot.webp"
                         alt="Screenshot of RunApp Landing Page">
+                    <div class="content">
+                        <div class="text">HEEEEYYYOOOOO!!!!!</div>
+                    </div>
                 </a>
+
+
             </li>
             <li>
                 <ul id="border-space">
@@ -213,9 +219,12 @@
                 </ul>
             </li>
             <li>
-                <a href="./BAT_CITY/index.html">
+                <a class="" href="./BAT_CITY/index.html">
                     <img id="batcity-screenshot" src="./images/batcity-screenshot.jpg"
                         alt="screenshot of the batcity collectibles website">
+                    <!-- <div class="content">
+                        <div class="text">HEEEEYYYOOOOO!!!!!</div>
+                    </div> -->
                 </a>
             </li>
             <li>
@@ -276,7 +285,7 @@
 
     </section>
 
-    <footer id="contact">
+    <section id="contact">
         <ul id="contact-lists">
             <li id="contact-title-min">Contact</li>
             <li>
@@ -304,54 +313,109 @@
             </li>
             <li>
                 <div id="contact-container">
-                    <form id="contact-form" method="post" action="contact-form.php">
-                        <label class="form_label">
+                    <p id="looking_forward">I'm looking forward to hearing from you!</p>
+
+                    <p id="response_time">Please allow 1-2 business days for a response</p>
+                    <!-- DESKTOP FORM -->
+                    <form id="contact-form-max" method="post" action="contact-form.php">
+                        <label class="form_label_max">
                             Name:
                             <input id="name" name="name" type="text" class="form-control" placeholder="First Last"
                                 required>
                         </label>
-                        <label class="form_label">
+                        <label class="form_label_max">
                             Email:
                             <input id="email" name="email" type="email" class="form-control" placeholder="you@email.com"
                                 required>
                         </label>
-                        <label class="form_label">
+                        <label class="form_label_max">
                             Website:
                             <input id="website" name="website" type="url" class="form-control"
                                 placeholder="https://www.yourwebsite.com" required>
                         </label>
                         <br>
-                        <label class="form_label">
-                            Start Date:
+                        <label class="form_label_max">
+                            Start:
                             <input id="start" name="start" type="date" class="form-control" placeholder="" required>
                         </label>
-                        <label class="form_label">
-                            End Date:
+                        <label class="form_label_max">
+                            End:
                             <input id="end" name="end" type="date" class="form-control" placeholder="" required>
                         </label>
-                        <label class="form_label">
+                        <label class="form_label_max">
                             Budget:
                             <input id="budget" name="budget" type="number" class="form-control" placeholder="$"
                                 required>
                         </label>
-                        <label class="form_label">
+                        <br>
+                        <label id="services_label">
                             Services Needed:
                             <input id="services" name="services" type="text" class="form-control" placeholder=""
                                 required>
                         </label>
                         <br>
-                        <label class="form_label">
+                        <label id="message_label">
                             Message:
-                            <textarea id="message" name="message" class="form-control" placeholder="" row="4"
-                                required></textarea>
+                            <textarea id="message" name="message" placeholder="" row="4" required></textarea>
+                        </label>
+                        <br>
+                        <input type="submit" class="submit" value="Contact">
+                    </form>
+                    <!-- MOBILE FORM -->
+                    <form id="contact-form-min" method="post" action="contact-form.php">
+                        <label class="form_label_min">
+                            Name:
+                            <input id="name" name="name" type="text" class="form-control" placeholder="First Last"
+                                required>
+                        </label>
+                        <br>
+                        <label class="form_label_min">
+                            Email:
+                            <input id="email" name="email" type="email" class="form-control" placeholder="you@email.com"
+                                required>
+                        </label>
+                        <br>
+                        <label class="form_label_min">
+                            Website:
+                            <input id="website" name="website" type="url" class="form-control"
+                                placeholder="https://www.yourwebsite.com" required>
+                        </label>
+                        <br>
+                        <label class="form_label_min">
+                            Start:
+                            <input id="start" name="start" type="date" class="form-control" placeholder="" required>
+                        </label>
+                        <br>
+                        <label class="form_label_min">
+                            End:
+                            <input id="end" name="end" type="date" class="form-control" placeholder="" required>
+                        </label>
+                        <br>
+                        <label class="form_label_min">
+                            Budget:
+                            <input id="budget" name="budget" type="number" class="form-control" placeholder="$"
+                                required>
+                        </label>
+                        <br>
+                        <label id="services_label">
+                            Services Needed:
+                            <input id="services" name="services" type="text" class="form-control" placeholder=""
+                                required>
+                        </label>
+                        <br>
+                        <label id="message_label">
+                            Message:
+                            <textarea id="message" name="message" placeholder="" row="4" required></textarea>
                         </label>
                         <br>
                         <input type="submit" class="submit" value="Contact">
                     </form>
                 </div>
+
+
             </li>
         </ul>
-    </footer>
+    </section>
 
 
 
