@@ -24,7 +24,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
     }
 
 .logo {
@@ -407,7 +407,7 @@ nav {
 
 
 #projects {
-    min-height: 50vh;
+    min-height: 100vh;
     color: antiquewhite;
     font-family: 'Montserrat', sans-serif;
      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#241414+0,202020+100 */
@@ -417,7 +417,7 @@ nav {
      background: linear-gradient(45deg, #241414 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#241414', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     padding-top: 8vh;
-    
+    overflow: hidden;
 }
 
 
@@ -429,6 +429,8 @@ nav {
     list-style: none;
     min-height: 42vh;
     width: 100%;
+    z-index: 5;
+    position: relative;
 }
 
 #projects-title-max {
@@ -520,12 +522,18 @@ nav {
 
 #lower-screenshot {
     min-height: 42vh;
-    
+    width: 100vw;
+    z-index: 0;
+    position: relative;
 }
 
 #bottom-borders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     list-style-type: none;
-    margin-top: -30px;
+    /* margin-top: -30px; */
 }
 
 #bottom-borders1 {
@@ -533,43 +541,52 @@ nav {
     border-bottom: solid 2px antiquewhite;
     border-right: solid 2px antiquewhite;
     padding-top: 8vh;
-    margin-left: 25vw;
-    margin-right: 20vw;
+    margin-left: 3.5vw;
+    /* margin-right: 20vw; */
     margin-top: -50px;
+    min-width: 41vw;
 }
 
 #bottom-borders2 {
     border-left: solid 2px antiquewhite;
     padding-top: 4vh;
-    margin-left: 51.65vw;
-}
-
-#centered-screenshot {
-    display: flex;
-    justify-content: center;
+    margin-left: 3.65vw;
 }
 
 #orbit-watches-screenshot {
     height: auto;
     max-width: 40vw;
-    border: 4px solid antiquewhite;
-    margin-left: 4vw;
+    border: 4px solid antiquewhite;   
 }
 
+
 #orbit-watches-screenshot-min {
+    display: none;
+}
+
+#runapp-screenshot-min {
     display: none;
 }
 
 #runapp-screenshot {
     height: auto;
     max-width: 40vw;
-    border: 4px solid antiquewhite;
+    border: 4px solid antiquewhite; 
+    margin-left: 3.5vw;
 }
 
 #batcity-screenshot {
     height: auto;
     max-width: 40vw;
     border: 4px solid antiquewhite;
+}
+
+#batcity-screenshot-min {
+    display: none;
+}
+
+.project-description {
+    display: none;
 }
 
 .hvr-grow {
@@ -595,6 +612,14 @@ nav {
     display: block;
     overflow: hidden;
   }
+
+  .lower-hover {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+  }
   .content {
     opacity: 0;
     font-size: 40px;
@@ -612,19 +637,68 @@ nav {
     transition: all 400ms ease-out;
     text-align: center;
   }
+
+  .lower-hover-content {
+    opacity: 0;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: antiquewhite;
+    background-color: #4c4b4b99;
+    height: 99%;
+    width: 100%;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    text-align: center;
+    margin-left: 3.40vw;
+  }
+
   .example .content:hover {
     opacity: 1;
   }
+  
+  .lower-hover .lower-hover-content:hover {
+    opacity: 1;
+  }
+
   .example .content .text {
     height: 0;
     opacity: 1;
     transition-delay: 0s;
     transition-duration: 0.4s;
   }
+
+  .lower-hover .lower-hover-content .text {
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+  }
+
   .example .content:hover .text {
     opacity: 1;
-    transform: translateY(250px);
-    -webkit-transform: translateY(250px);
+    transform: translateY(6vh);
+    -webkit-transform: translateY(6vh);
+  }
+  
+  .lower-hover .lower-hover-content:hover .text {
+    opacity: 1;
+    transform: translateY(6vh);
+    -webkit-transform: translateY(6vh);
+  }
+
+  .text {
+      font-size: 20px;
+      margin-left: 8vw;
+      margin-right: 8vw;
+  }
+
+  #text-position {
+      padding-right: 3vw;
   }
 
 
@@ -1112,20 +1186,8 @@ form .submit:hover {
         padding-left: 25vw;
     }
 
-    
-
-    #vibrato-screenshot {
-        display: block;
-        height: auto;
-        max-width: 65vw;
-        border: 4px solid antiquewhite;
-    }
-    
-    #batcity-screenshot {
-        display: block;
-        height: auto;
-        max-width: 65vw;
-        border: 4px solid antiquewhite;
+    #orbit-watches-screenshot {
+        display: none;
     }
 
     #orbit-watches-screenshot-min {
@@ -1134,6 +1196,57 @@ form .submit:hover {
         max-width: 65vw;
         border: 4px solid antiquewhite;
     }
+
+    #runapp-screenshot {
+        display: block;
+        height: auto;
+        max-width: 65vw;
+        border: 4px solid antiquewhite;
+    }
+    
+    #batcity-screenshot {
+        display: none;
+    }
+
+    #batcity-screenshot-min {
+        display: block;
+        height: auto;
+        max-width: 65vw;
+        border: 4px solid antiquewhite;
+    }
+
+    #runapp-screenshot-min {
+        display: block;
+        height: auto;
+        max-width: 65vw;
+        border: 4px solid antiquewhite;
+    }
+
+    .content {
+        height: 100%;
+    }
+
+    .lower-hover-content {
+        height: 100%;
+    }
+
+    .project-description {
+        display: block;
+    }
+
+    .project-text-container {
+        max-width: 56.65vw;
+        height: auto;
+        border: 4px solid antiquewhite;
+        border-top: none;
+        background-color: #4c4b4b99;
+    }
+
+    .project-text {
+        font-size: 20px;
+        padding: 2vw 8vw;
+    }
+
 
 
 }
@@ -1149,6 +1262,12 @@ form .submit:hover {
 
     .min-border-alignment {
         display: none;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .project-text {
+        font-size: 16px;
     }
 }
 
@@ -2438,3 +2557,4 @@ and (orientation: portrait) {
             margin-top: 100vh;
         }
     }
+}
