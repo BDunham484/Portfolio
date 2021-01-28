@@ -777,7 +777,8 @@ nav {
     border: 2px solid antiquewhite;
     text-align: center;
     padding-bottom: 4vh;
-    padding-top: 4vh;  
+    padding-top: 4vh; 
+    margin-bottom: 8vh; 
 }
 
 #looking_forward {
@@ -1239,7 +1240,12 @@ form .submit:hover {
         height: auto;
         border: 4px solid antiquewhite;
         border-top: none;
-        background-color: #4c4b4b99;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4c4b4b+0,202020+100 */
+        background: #4c4b4b; /* Old browsers */
+        background: -moz-linear-gradient(45deg,  #4c4b4b 0%, #202020 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg,  #4c4b4b 0%,#202020 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg,  #4c4b4b 0%,#202020 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4b4b', endColorstr='#202020',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     }
 
     .project-text {
