@@ -422,7 +422,7 @@ nav {
 
 
 
-#screenshots {
+.screenshots {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -431,6 +431,52 @@ nav {
     width: 100%;
     z-index: 5;
     position: relative;
+    margin-top: -3vh;
+}
+
+.lower-screenshots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    min-height: 42vh;
+    width: 100%;
+    z-index: 5;
+    position: relative;
+}
+
+.top-border-alignment {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
+
+.min-borders-top {
+    border-top: solid 2px antiquewhite;
+    border-left: solid 2px antiquewhite;
+    border-right: solid 2px antiquewhite;
+    padding-top: 5vh;
+    padding-right: 25vw;
+    padding-left: 25vw;    
+}
+
+.min-borders4 {    
+    border-left: solid 1px antiquewhite;
+    border-right: solid 1px antiquewhite;
+    padding-bottom: 2vh;
+}
+
+#projects-title-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    list-style: none;
+    font-size: max(2vw, 28px);   
+    text-shadow: 0px 0px 10px #e12b2b;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
 
 #projects-title-max {
@@ -472,8 +518,8 @@ nav {
     border-bottom: solid 2px antiquewhite;
     border-left: solid 2px antiquewhite;
     padding-left: 2vw;
-    padding-top: 200%;
-    padding-bottom: 200%;
+    padding-top: 400%;
+    padding-bottom: 400%;
 }
 
 .borders3 {    
@@ -572,7 +618,6 @@ nav {
     height: auto;
     max-width: 40vw;
     border: 4px solid antiquewhite; 
-    margin-left: 3.5vw;
 }
 
 #batcity-screenshot {
@@ -732,6 +777,7 @@ nav {
     list-style: none;
     min-height: 42vh;
     width: 100%;
+    margin-right: 7vw;
 }
 
 #contact-title-max {
@@ -1073,6 +1119,16 @@ form .submit:hover {
     }
 }
 
+@media screen and (max-width: 1420px) {
+    .screenshots {
+        margin-top: -6vh;
+    }
+
+    .lower-screenshots {
+        margin-top: -3vh;
+    }
+}
+
 @media screen and (max-width: 1350px) {
     
     #bottom-borders1 {
@@ -1087,15 +1143,31 @@ form .submit:hover {
     }
 }
 
+@media screen and (max-width: 1175px) {
+    .screenshots {
+        margin-top: -8vh;
+    }
+
+    .lower-screenshots {
+        margin-top: -9vh;
+    }
+}
+
 @media screen and (max-width: 1100px) {
    
-    #screenshots {
+    .screenshots {
         display: flex;
         flex-direction: column;
         align-items: center;
         list-style: none;
         min-height: 42vh;
         width: 100%;
+        margin-top: 0;
+    }
+
+    .lower-screenshots {
+        flex-direction: column; 
+        margin-top: 0;  
     }
 
     #lower-screenshot {
@@ -1199,10 +1271,7 @@ form .submit:hover {
     }
 
     #runapp-screenshot {
-        display: block;
-        height: auto;
-        max-width: 65vw;
-        border: 4px solid antiquewhite;
+        display: none;
     }
     
     #batcity-screenshot {
